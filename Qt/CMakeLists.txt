@@ -1,0 +1,5 @@
+add_subdirectory(ApplicationComponents)
+add_subdirectory(Core)
+add_subdirectory(Widgets)
+add_subdirectory(Components)
+add_subdirectory(Python)
