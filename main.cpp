@@ -1,6 +1,6 @@
 #include <QApplication>
 
-#include <pqPVApplicationCore.h>
+#include <pqPVApplicationCore2.h>
 
 #include "ParaViewMainWindow.h"
 

@@ -1,0 +1,22 @@
+target_sources(qtguitest
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/Base64.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/CommandLineArguments.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/Configure.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Configure.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/Directory.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/DynamicLoader.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/Encoding.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Encoding.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/FStream.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/Glob.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/MD5.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Process.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/RegularExpression.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/SharedForward.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Status.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/String.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/System.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/SystemInformation.hxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/SystemTools.hxx
+)

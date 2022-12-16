@@ -28,19 +28,20 @@ set(Qt5_DIR "${PROJECT_SOURCE_DIR}/../vcpkg/installed/x64-windows/share/cmake/Qt
 set(qt_xmlpatterns_executable "${PROJECT_SOURCE_DIR}/../vcpkg/installed/x64-windows/tools/qt5-xmlpatterns/bin/xmlpatterns.exe")
 
 include_directories(
-	"${PROJECT_SOURCE_DIR}/out/install/x64-Debug/include/paraview-5.11"
-	"${PROJECT_SOURCE_DIR}/out/install/x64-Debug/include/paraview-5.11/vtkkwiml"
-	"${PROJECT_SOURCE_DIR}/out/install/x64-Debug/include/paraview-5.11/vtksys"
-	"${PROJECT_SOURCE_DIR}/out/install/x64-Debug/include/paraview-5.11/vtkqttesting"
-	"${PROJECT_SOURCE_DIR}/out/install/x64-Debug/include/paraview-5.11/pvpythonmodules"
-	"${PROJECT_SOURCE_DIR}/out/install/x64-Debug/include/paraview-5.11/vtkpythonmodules"
+	"${PROJECT_SOURCE_DIR}/include/paraview-5.11"
+	"${PROJECT_SOURCE_DIR}/include/paraview-5.11/vtkkwiml"
+	"${PROJECT_SOURCE_DIR}/include/paraview-5.11/vtksys"
+	"${PROJECT_SOURCE_DIR}/include/paraview-5.11/vtkqttesting"
+	"${PROJECT_SOURCE_DIR}/include/paraview-5.11/pvpythonmodules"
+	"${PROJECT_SOURCE_DIR}/include/paraview-5.11/vtkpythonmodules"
+	"${PROJECT_SOURCE_DIR}/include/paraview-5.11/vtkprotobuf/src"
 )
 
 find_package(Qt5 REQUIRED GLOBAL COMPONENTS Core Widgets)
 
 add_compile_definitions(PARAVIEW_USE_PYTHON)
-set(Python_ROOT "${PROJECT_SOURCE_DIR}/../Python311" CACHE PATH "..." FORCE)
-include_directories(C:/Python311/include)
+set(Python_ROOT     "${PROJECT_SOURCE_DIR}/../Python311" CACHE PATH "..." FORCE)
+include_directories("${PROJECT_SOURCE_DIR}/../Python311/include")
 find_package(PythonLibs REQUIRED)
 
 set(CMAKE_AUTOMOC 1)
@@ -57,11 +58,15 @@ add_compile_definitions(VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE)
 add_compile_definitions(VTKGUISUPPORTQT_STATIC_DEFINE)
 add_compile_definitions(VTKPYTHONINTERPRETER_STATIC_DEFINE)
 add_compile_definitions(VTKWRAPPINGPYTHONCORE_STATIC_DEFINE)
+add_compile_definitions(VTKREMOTINGCORE_STATIC_DEFINE)
+add_compile_definitions(VTKCOMMONMISC_STATIC_DEFINE)
 add_compile_definitions(PQPYTHON_STATIC_DEFINE)
 
+add_compile_definitions(VTK_MODULE_ENABLE_ParaView_pqPython)
+
+add_subdirectory(include)
 add_subdirectory(Clients)
 add_subdirectory(Qt)
-add_subdirectory(out)
 add_subdirectory(VTK)
 add_subdirectory(VTKExtensions)
 add_subdirectory(Remoting)

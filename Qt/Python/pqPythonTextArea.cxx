@@ -1,38 +1,6 @@
-/*=========================================================================
-
-   Program: ParaView
-   Module:    pqPythonTextArea.cxx
-
-   Copyright (c) 2005-2008 Sandia Corporation, Kitware Inc.
-   All rights reserved.
-
-   ParaView is a free software; you can redistribute it and/or modify it
-   under the terms of the ParaView license version 1.2.
-
-   See License_v1.2.txt for the full ParaView license.
-   A copy of this license can be obtained by contacting
-   Kitware Inc.
-   28 Corporate Drive
-   Clifton Park, NY 12065
-   USA
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR
-CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-=========================================================================*/
-
 #include "pqPythonTextArea.h"
-#include "pqPythonFileIO.h"
-#include "pqPythonLineNumberArea.h"
+#include "pqPythonFileIO2.h"
+#include "pqPythonLineNumberArea2.h"
 // b #include "pqPythonSyntaxHighlighter.h"
 
 #include <QHBoxLayout>
@@ -76,10 +44,11 @@ pqPythonTextArea::pqPythonTextArea(QWidget* parent)
     const int cursorPosition = this->TextEdit->textCursor().position();
 
     // Push a new command to the stack (which calls redo, thus applying the command)
+    /*
     this->UndoStack.push(new pqPythonUndoCommand(
       *this->TextEdit, // b this->SyntaxHighlighter, 
         this->lastEntry, { text, cursorPosition }));
-
+        */
     // Save the last entry
     this->lastEntry = { text, cursorPosition };
 
@@ -101,8 +70,8 @@ pqPythonTextArea::pqPythonTextArea(QWidget* parent)
   this->connect(
     this->FileIO.data(), &pqPythonFileIO::contentChanged, this, &pqPythonTextArea::contentChanged);
 
-  this->connect(
-    this->FileIO.data(), &pqPythonFileIO::bufferErased, [this]() { this->UndoStack.clear(); });
+  // b this->connect(
+    // b this->FileIO.data(), &pqPythonFileIO::bufferErased, [this]() { this->UndoStack.clear(); });
 }
 
 //-----------------------------------------------------------------------------
@@ -113,18 +82,21 @@ bool pqPythonTextArea::eventFilter(QObject* obj, QEvent* event)
   if (event->type() == QEvent::KeyPress)
   {
     QKeyEvent* keyEvent = static_cast<QKeyEvent*>(event);
+    /* b
     if (keyEvent->matches(QKeySequence::Undo))
     {
       this->UndoStack.undo();
       this->LineNumberArea->update();
       return true;
     }
-    else if (keyEvent->matches(QKeySequence::Redo))
+    else 
+    if (keyEvent->matches(QKeySequence::Redo))
     {
       this->UndoStack.redo();
       this->LineNumberArea->update();
       return true;
     }
+    */
   }
 
   return QObject::eventFilter(obj, event);
@@ -179,7 +151,7 @@ void pqPythonTextArea::connectActions(pqPythonEditorActions& actions)
 {
   pqPythonEditorActions::connect(actions, this->TextEdit.data());
   pqPythonEditorActions::connect(actions, this->FileIO.data());
-  pqPythonEditorActions::connect(actions, &this->UndoStack);
+  // b pqPythonEditorActions::connect(actions, &this->UndoStack);
 }
 
 //-----------------------------------------------------------------------------
@@ -187,11 +159,13 @@ void pqPythonTextArea::disconnectActions(pqPythonEditorActions& actions)
 {
   pqPythonEditorActions::disconnect(actions, this->TextEdit.data());
   pqPythonEditorActions::disconnect(actions, this->FileIO.data());
-  pqPythonEditorActions::disconnect(actions, &this->UndoStack);
+  // b pqPythonEditorActions::disconnect(actions, &this->UndoStack);
 }
 
 //-----------------------------------------------------------------------------
+/* b
 void pqPythonTextArea::unlink()
 {
   this->TextLinker = pqTextLinker();
 }
+*/

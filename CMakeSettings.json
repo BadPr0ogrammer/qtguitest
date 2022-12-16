@@ -9,26 +9,7 @@
             "installRoot": "${projectDir}\\out\\install\\${name}",
             "cmakeCommandArgs": "",
             "buildCommandArgs": "",
-            "ctestCommandArgs": "",
-            "variables": [
-                {
-                    "name": "PARAVIEW_USE_PYTHON",
-                    "value": "False",
-                    "type": "BOOL"
-                }
-            ]
-        },
-        {
-            "name": "x64-Release",
-            "generator": "Ninja",
-            "configurationType": "RelWithDebInfo",
-            "buildRoot": "${projectDir}\\out\\build\\${name}",
-            "installRoot": "${projectDir}\\out\\install\\${name}",
-            "cmakeCommandArgs": "",
-            "buildCommandArgs": "",
-            "ctestCommandArgs": "",
-            "inheritEnvironments": [ "msvc_x64_x64" ],
-            "intelliSenseMode": "windows-msvc-x64"
+            "ctestCommandArgs": ""
         }
     ]
 }

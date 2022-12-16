@@ -1,0 +1,49 @@
+add_subdirectory(vtkkwiml)
+add_subdirectory(vtksys)
+add_subdirectory(vtkqttesting)
+add_subdirectory(vtkprotobuf)
+
+target_sources(qtguitest
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationComponentsModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqComponentsModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqQtConfig2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkBuild2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkCommonCoreModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkCommonDataModelModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkCommonMiscModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkDebug2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkFeatures2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkGUISupportQtModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkIOXMLParserModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkLegacy2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkOptions2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPlatform2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVVersion2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVVTKExtensionsCoreModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPython2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPythonCompatibility2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPythonConfigure2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPythonInterpreterModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingApplicationModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingCoreModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingServerManagerModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingSettingsModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkThreads2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVersionFull2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVersionMacros2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkWrappingPythonCoreModule2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_cli11_2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_cli11_external2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_cli11_forward2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_kwiml2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_protobuf2.h
+)
+
+target_include_directories(qtguitest
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)

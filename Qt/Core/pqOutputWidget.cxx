@@ -1,14 +1,16 @@
 #include "pqOutputWidget.h"
 #include "ui_pqOutputWidget.h"
 
-#include "pqApplicationCore.h"
-#include "pqCoreUtilities.h"
-// b #include "pqFileDialog.h"
-// b #include "pqSettings.h"
-#include "vtkNew.h"
-#include "vtkObjectFactory.h"
-#include "vtkOutputWindow.h"
-
+#include "pqApplicationCore2.h"
+#include "pqCoreUtilities2.h"
+#include "vtkNew2.h"
+#include "vtkObjectFactory2.h"
+#include "vtkOutputWindow2.h"
+/* b 
+#include "pqFileDialog.h"
+#include "pqSettings.h"
+*/
+#include <QApplication>
 #include <QClipboard>
 #include <QDockWidget>
 #include <QMutexLocker>
@@ -450,8 +452,8 @@ void pqOutputWidget::saveToFile()
 //-----------------------------------------------------------------------------
 void pqOutputWidget::copyToClipboard()
 {
-  QClipboard* clipboard = QGuiApplication::clipboard();
-  clipboard->setText(this->Internals->Ui.consoleWidget->text());
+  // b QClipboard* clipboard = QGuiApplication::clipboard();
+  // b clipboard->setText(this->Internals->Ui.consoleWidget->text());
 }
 
 //-----------------------------------------------------------------------------

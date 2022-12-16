@@ -1,22 +1,16 @@
 target_sources(qtguitest
     PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationCore.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationCore.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreInit.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreInit.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqMainWindowEventManager.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqMainWindowEventManager.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationCore2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationCore2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreInit2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreInit2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreUtilities2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreUtilities2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqMainWindowEventManager2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqMainWindowEventManager2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputWidget.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputWidget.ui 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputWidget.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreUtilities.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreUtilities.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqLinkedObjectQTextEdit.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqLinkedObjectQTextEdit.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqLinkedObjectInterface.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqLinkedObjectInterface.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqTextLinker.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqTextLinker.h
 )
 
 target_include_directories(qtguitest

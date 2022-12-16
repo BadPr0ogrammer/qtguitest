@@ -1,37 +1,30 @@
 target_sources(qtguitest
     PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqLinkedObjectPythonTextArea.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqLinkedObjectPythonTextArea.h   
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonDebugLeaksView.cxx       
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonDebugLeaksView.h         
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonEditorActions.cxx        
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonEditorActions.h          
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonFileIO.cxx               
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonFileIO.h                 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonLineNumberArea.cxx       
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonLineNumberArea.h         
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonMacroSupervisor.cxx      
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonMacroSupervisor.h        
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonManager.cxx              
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonManager.h                
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonScriptEditor.cxx         
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonScriptEditor.h           
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShell.cxx                
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShell.h                  
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShell.ui                 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShellCompleter.cxx       
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShellCompleter.h         
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTabWidget.cxx            
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTabWidget.h              
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTabWidget.txx            
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTextArea.cxx             
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTextArea.h               
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTextArea.txx             
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand.cxx          
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand.h            
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUtils.h                  
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqTextLinkerPython.h             
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqTextLinkerPython.txx           
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonDebugLeaksView2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonDebugLeaksView2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonEditorActions2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonEditorActions2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonFileIO2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonFileIO2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonLineNumberArea2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonLineNumberArea2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonMacroSupervisor2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonMacroSupervisor2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonManager2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonManager2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonScriptEditor2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonScriptEditor2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShell.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShell.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShell.ui
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShellCompleter2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonShellCompleter2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTextArea.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTextArea.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTextArea.txx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUtils2.h
  )
 
 target_include_directories(qtguitest

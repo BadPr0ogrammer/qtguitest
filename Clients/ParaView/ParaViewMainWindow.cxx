@@ -5,26 +5,24 @@
 #include "ParaViewMainWindow.h"
 #include "ui_ParaViewMainWindow.h"
 
-/// #include "pqActiveObjects.h"
-/// #include "pqApplicationCore.h"
-/// #include "pqCoreUtilities.h"
-/// #include "pqDeleteReaction.h"
-/// #include "pqMainWindowEventManager.h"
-/// #include "pqParaViewBehaviors.h"
-/// #include "pqParaViewMenuBuilders.h"
-/// #include "pqSaveStateReaction.h"
-/// #include "pqSettings.h"
-/// #include "pqTimer.h"
-/*
-#include "pqWelcomeDialog.h"
-
-#include "vtkCommand.h"
-#include "vtkPVGeneralSettings.h"
-#include "vtkRemotingCoreConfiguration.h"
-#include "vtkSMSettings.h"
+#include "pqApplicationCore2.h"
+#include "pqCoreUtilities2.h"
+#include "pqTimer2.h"
+#include "pqMainWindowEventManager2.h"
+#include "pqParaViewBehaviors2.h"
+#include "pqQtConfig2.h"
+#include "vtkCommand2.h"
 #include "vtksys/SystemTools.hxx"
+/*
+#include "vtkRemotingCoreConfiguration.h"
+#inlude "pqActiveObjects.h"
+#include "pqDeleteReaction.h"
+#include "pqParaViewMenuBuilders.h"
+#include "pqSaveStateReaction.h"
+#include "pqWelcomeDialog.h"
+#include "vtkPVGeneralSettings.h"
+#include "vtkSMSettings.h"
 */
-/// #include "pqQtConfig.h"
 #ifdef PARAVIEW_USE_QTHELP
 #include "pqHelpReaction.h"
 #endif
@@ -43,12 +41,12 @@
 #endif
 
 #if PARAVIEW_USE_PYTHON
-#include "pqPythonDebugLeaksView.h"
+#include "pqPythonDebugLeaksView2.h"
 #include "pqPythonShell.h"
 typedef pqPythonDebugLeaksView DebugLeaksViewType;
 #else
-/// #include "vtkQtDebugLeaksView.h"
-/// typedef vtkQtDebugLeaksView DebugLeaksViewType;
+#include "vtkQtDebugLeaksView.h"
+typedef vtkQtDebugLeaksView DebugLeaksViewType;
 #endif
 
 class ParaViewMainWindow::pqInternals : public Ui::pqClientMainWindow
@@ -57,20 +55,19 @@ public:
   bool FirstShow;
   int CurrentGUIFontSize;
   QFont DefaultApplicationFont; // will be initialized to default app font in constructor.
-  /// pqTimer UpdateFontSizeTimer;
+  pqTimer UpdateFontSizeTimer;
   pqInternals()
     : FirstShow(true)
     , CurrentGUIFontSize(0)
   {
-    /// this->UpdateFontSizeTimer.setInterval(0);
-    /// this->UpdateFontSizeTimer.setSingleShot(true);
+    this->UpdateFontSizeTimer.setInterval(0);
+    this->UpdateFontSizeTimer.setSingleShot(true);
   }
 };
 
 //-----------------------------------------------------------------------------
 ParaViewMainWindow::ParaViewMainWindow()
 {
-    /* b
   // the debug leaks view should be constructed as early as possible
   // so that it can monitor vtk objects created at application startup.
   DebugLeaksViewType* leaksView = nullptr;
@@ -80,7 +77,6 @@ ParaViewMainWindow::ParaViewMainWindow()
     leaksView->setWindowFlags(Qt::Window);
     leaksView->show();
   }
-  */
 #if PARAVIEW_USE_PYTHON
   pvpythonmodules_load();
 #endif
@@ -92,17 +88,19 @@ ParaViewMainWindow::ParaViewMainWindow()
 
   this->Internals = new pqInternals();
   this->Internals->setupUi(this);
-  // b this->Internals->outputWidgetDock->hide();
-  // b this->Internals->pythonShellDock->hide();
-///  this->Internals->materialEditorDock->hide();
+  /* b 
+  this->Internals->outputWidgetDock->hide();
+  this->Internals->pythonShellDock->hide();
+  this->Internals->materialEditorDock->hide();
+  */
 #if PARAVIEW_USE_PYTHON
   pqPythonShell* shell = new pqPythonShell(this);
   shell->setObjectName("pythonShell");
   this->Internals->pythonShellDock->setWidget(shell);
-  /// if (leaksView)
-  /// {
-    /// leaksView->setShell(shell);
-  /// }
+  if (leaksView)
+  {
+    leaksView->setShell(shell);
+  }
 #endif
 
 #if PARAVIEW_USE_MATERIALEDITOR
@@ -121,26 +119,26 @@ ParaViewMainWindow::ParaViewMainWindow()
   // Set up the dock window corners to give the vertical docks more room.
   this->setCorner(Qt::BottomLeftCorner, Qt::LeftDockWidgetArea);
   this->setCorner(Qt::BottomRightCorner, Qt::RightDockWidgetArea);
-
-///  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->memoryInspectorDock);
-///  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->comparativePanelDock);
-///  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->collaborationPanelDock);
-///  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->lightInspectorDock);
-///  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->findDataDock);
-///  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->multiBlockInspectorDock);
-
-///  this->Internals->findDataDock->hide();
-///  this->Internals->animationViewDock->hide();
-///  this->Internals->statisticsDock->hide();
-///  this->Internals->comparativePanelDock->hide();
-///  this->Internals->collaborationPanelDock->hide();
-///  this->Internals->memoryInspectorDock->hide();
-///  this->Internals->multiBlockInspectorDock->hide();
-///  this->Internals->colorMapEditorDock->hide();
-///  this->Internals->timeInspectorDock->hide();
-///  this->Internals->lightInspectorDock->hide();
-///  this->Internals->selectionEditorDock->hide();
 /*
+  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->memoryInspectorDock);
+  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->comparativePanelDock);
+  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->collaborationPanelDock);
+  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->lightInspectorDock);
+  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->findDataDock);
+  this->tabifyDockWidget(this->Internals->colorMapEditorDock, this->Internals->multiBlockInspectorDock);
+
+  this->Internals->findDataDock->hide();
+  this->Internals->animationViewDock->hide();
+  this->Internals->statisticsDock->hide();
+  this->Internals->comparativePanelDock->hide();
+  this->Internals->collaborationPanelDock->hide();
+  this->Internals->memoryInspectorDock->hide();
+  this->Internals->multiBlockInspectorDock->hide();
+  this->Internals->colorMapEditorDock->hide();
+  this->Internals->timeInspectorDock->hide();
+  this->Internals->lightInspectorDock->hide();
+  this->Internals->selectionEditorDock->hide();
+
   this->tabifyDockWidget(this->Internals->animationViewDock, this->Internals->statisticsDock);
   this->tabifyDockWidget(this->Internals->animationViewDock, this->Internals->outputWidgetDock);
   this->tabifyDockWidget(this->Internals->animationViewDock, this->Internals->pythonShellDock);
@@ -149,8 +147,8 @@ ParaViewMainWindow::ParaViewMainWindow()
   // setup properties dock
   this->tabifyDockWidget(this->Internals->propertiesDock, this->Internals->viewPropertiesDock);
   this->tabifyDockWidget(this->Internals->propertiesDock, this->Internals->displayPropertiesDock);
-///  this->tabifyDockWidget(this->Internals->propertiesDock, this->Internals->informationDock);
-  /***
+  this->tabifyDockWidget(this->Internals->propertiesDock, this->Internals->informationDock);
+
   vtkSMSettings* settings = vtkSMSettings::GetInstance();
 
   int propertiesPanelMode = settings->GetSettingAsInt(
@@ -200,30 +198,28 @@ ParaViewMainWindow::ParaViewMainWindow()
   pqCoreUtilities::connect(
     gsSettings, vtkCommand::ModifiedEvent, &this->Internals->UpdateFontSizeTimer, SLOT(start()));
   this->connect(&this->Internals->UpdateFontSizeTimer, SIGNAL(timeout()), SLOT(updateFontSize()));
-  */
-  // b this->Internals->propertiesDock->show();
-  // b this->Internals->propertiesDock->raise();
+
+  this->Internals->propertiesDock->show();
+  this->Internals->propertiesDock->raise();
 
   // Enable help from the properties panel.
-  // b QObject::connect(this->Internals->propertiesPanel, SIGNAL(helpRequested(const QString&, const QString&)), this, SLOT(showHelpForProxy(const QString&, const QString&)));
+  QObject::connect(this->Internals->propertiesPanel, SIGNAL(helpRequested(const QString&, const QString&)), this, SLOT(showHelpForProxy(const QString&, const QString&)));
 
-  /// hook delete to pqDeleteReaction.
-  // b QAction* tempDeleteAction = new QAction(this);
-  /// pqDeleteReaction* handler = new pqDeleteReaction(tempDeleteAction);
-  /// handler->connect(this->Internals->propertiesPanel, SIGNAL(deleteRequested(pqProxy*)),
-    /// SLOT(deleteSource(pqProxy*)));
+  // hook delete to pqDeleteReaction.
+  QAction* tempDeleteAction = new QAction(this);
+  pqDeleteReaction* handler = new pqDeleteReaction(tempDeleteAction);
+  handler->connect(this->Internals->propertiesPanel, SIGNAL(deleteRequested(pqProxy*)), SLOT(deleteSource(pqProxy*)));
 
   // setup color editor
-  /// Provide access to the color-editor panel for the application.
-  /// pqApplicationCore::instance()->registerManager("COLOR_EDITOR_PANEL", this->Internals->colorMapEditorDock);
+  // Provide access to the color-editor panel for the application.
+  pqApplicationCore::instance()->registerManager("COLOR_EDITOR_PANEL", this->Internals->colorMapEditorDock);
 
   // Provide access to the find data panel for the application.
-  /// pqApplicationCore::instance()->registerManager("FIND_DATA_PANEL", this->Internals->findDataDock);
+  pqApplicationCore::instance()->registerManager("FIND_DATA_PANEL", this->Internals->findDataDock);
 
   // Populate application menus with actions.
-  /* b
   pqParaViewMenuBuilders::buildFileMenu(*this->Internals->menu_File);
-  // b pqParaViewMenuBuilders::buildEditMenu(*this->Internals->menu_Edit, this->Internals->propertiesPanel);
+  pqParaViewMenuBuilders::buildEditMenu(*this->Internals->menu_Edit, this->Internals->propertiesPanel);
 
   // Populate sources menu.
   pqParaViewMenuBuilders::buildSourcesMenu(*this->Internals->menuSources, this);
@@ -241,7 +237,7 @@ ParaViewMainWindow::ParaViewMainWindow()
   pqParaViewMenuBuilders::buildCatalystMenu(*this->Internals->menu_Catalyst);
 
   // setup the context menu for the pipeline browser.
-  // b pqParaViewMenuBuilders::buildPipelineBrowserContextMenu(*this->Internals->pipelineBrowser->contextMenu());
+  pqParaViewMenuBuilders::buildPipelineBrowserContextMenu(*this->Internals->pipelineBrowser->contextMenu());
 
   pqParaViewMenuBuilders::buildToolbars(*this);
 
@@ -261,8 +257,8 @@ ParaViewMainWindow::ParaViewMainWindow()
   // UsageLoggingBehavior needs to explicitly enabled for ParaView since it's
   // disabled by default.
   pqParaViewBehaviors::setEnableUsageLoggingBehavior(true);
-  new pqParaViewBehaviors(this, this);
   */
+  new pqParaViewBehaviors(this, this);
 }
 
 //-----------------------------------------------------------------------------
@@ -270,7 +266,7 @@ ParaViewMainWindow::~ParaViewMainWindow()
 {
   delete this->Internals;
 }
-#if 0
+/* b
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::showHelpForProxy(const QString& groupname, const QString& proxyname)
 {
@@ -282,15 +278,15 @@ void ParaViewMainWindow::showHelpForProxy(const QString& groupname, const QStrin
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::dragEnterEvent(QDragEnterEvent* evt)
 {
-///   pqApplicationCore::instance()->getMainWindowEventManager()->dragEnterEvent(evt);
+// pqApplicationCore::instance()->getMainWindowEventManager()->dragEnterEvent(evt);
 }
 
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::dropEvent(QDropEvent* evt)
 {
-///   pqApplicationCore::instance()->getMainWindowEventManager()->dropEvent(evt);
+// pqApplicationCore::instance()->getMainWindowEventManager()->dropEvent(evt);
 }
-
+*/
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::showEvent(QShowEvent* evt)
 {
@@ -299,38 +295,38 @@ void ParaViewMainWindow::showEvent(QShowEvent* evt)
   if (this->Internals->FirstShow)
   {
     this->Internals->FirstShow = false;
-    /* b if (!vtkRemotingCoreConfiguration::GetInstance()->GetDisableRegistry())
+    /* b 
+    if (!vtkRemotingCoreConfiguration::GetInstance()->GetDisableRegistry())
     {
       auto core = pqApplicationCore::instance();
       if (core->settings()->value("GeneralSettings.ShowWelcomeDialog", true).toBool())
       {
-        /// pqTimer::singleShot(1000, this, SLOT(showWelcomeDialog()));
+        pqTimer::singleShot(1000, this, SLOT(showWelcomeDialog()));
       }
 
       this->updateFontSize();
-    }   */ 
+    }   
+    */ 
   }
-
-///  pqApplicationCore::instance()->getMainWindowEventManager()->showEvent(evt);
+  pqApplicationCore::instance()->getMainWindowEventManager()->showEvent(evt);
 }
 
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::closeEvent(QCloseEvent* evt)
 {
-  /// pqApplicationCore::instance()->getMainWindowEventManager()->closeEvent(evt);
+  pqApplicationCore::instance()->getMainWindowEventManager()->closeEvent(evt);
 }
-
+/* b
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::showWelcomeDialog()
 {
-  /// pqWelcomeDialog dialog(this);
-  /// dialog.exec();
+  pqWelcomeDialog dialog(this);
+  dialog.exec();
 }
 
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::updateFontSize()
 {
-    /***
   auto& internals = *this->Internals;
   vtkPVGeneralSettings* gsSettings = vtkPVGeneralSettings::GetInstance();
   int fontSize = internals.DefaultApplicationFont.pointSize();
@@ -360,19 +356,18 @@ void ParaViewMainWindow::updateFontSize()
   pqOutputWidget* outputWidget =
     qobject_cast<pqOutputWidget*>(this->Internals->outputWidgetDock->widget());
   outputWidget->setFontSize(fontSize);
-  */
 }
+*/
 
 //-----------------------------------------------------------------------------
 void ParaViewMainWindow::handleMessage(const QString&, int type)
 {
   QDockWidget* dock = this->Internals->outputWidgetDock;
-  // b pqOutputWidget* outputWidget = qobject_cast<pqOutputWidget*>(dock->widget());
-  /* b 
+  pqOutputWidget* outputWidget = qobject_cast<pqOutputWidget*>(dock->widget());
   if (dock->isFloating() && !outputWidget->shouldOpenForNewMessages())
   {
     return;
-  }*/
+  }
   if (!dock->isVisible() && (type == QtCriticalMsg || type == QtFatalMsg || type == QtWarningMsg))
   {
     // if dock is not visible, we always pop it up as a floating dialog. This
@@ -392,4 +387,3 @@ void ParaViewMainWindow::handleMessage(const QString&, int type)
     dock->raise();
   }
 }
-#endif //0
