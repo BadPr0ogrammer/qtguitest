@@ -14,10 +14,10 @@
 #include "vtkCommand2.h"
 #include "vtksys/SystemTools.hxx"
 /*
+#include "pqParaViewMenuBuilders.h"
 #include "vtkRemotingCoreConfiguration.h"
 #inlude "pqActiveObjects.h"
 #include "pqDeleteReaction.h"
-#include "pqParaViewMenuBuilders.h"
 #include "pqSaveStateReaction.h"
 #include "pqWelcomeDialog.h"
 #include "vtkPVGeneralSettings.h"
@@ -258,6 +258,8 @@ ParaViewMainWindow::ParaViewMainWindow()
   // disabled by default.
   pqParaViewBehaviors::setEnableUsageLoggingBehavior(true);
   */
+  // Create a custom file menu with only Open and close
+
   new pqParaViewBehaviors(this, this);
 }
 

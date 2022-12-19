@@ -49,61 +49,7 @@
      <string>&amp;File</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menuSources">
-    <property name="title">
-     <string>&amp;Sources</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuFilters">
-    <property name="title">
-     <string>Fi&amp;lters</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_Edit">
-    <property name="title">
-     <string>&amp;Edit</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_View">
-    <property name="title">
-     <string>&amp;View</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuTools">
-    <property name="title">
-     <string>&amp;Tools</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_Help">
-    <property name="title">
-     <string>&amp;Help</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_Macros">
-    <property name="title">
-     <string>&amp;Macros</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_Catalyst">
-    <property name="title">
-     <string>&amp;Catalyst</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuExtractors">
-    <property name="title">
-     <string>E&amp;xtractors</string>
-    </property>
-   </widget>
    <addaction name="menu_File"/>
-   <addaction name="menu_Edit"/>
-   <addaction name="menu_View"/>
-   <addaction name="menuSources"/>
-   <addaction name="menuFilters"/>
-   <addaction name="menuExtractors"/>
-   <addaction name="menuTools"/>
-   <addaction name="menu_Catalyst"/>
-   <addaction name="menu_Macros"/>
-   <addaction name="menu_Help"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QDockWidget" name="outputWidgetDock">
@@ -157,6 +103,22 @@
       </widget>
      </item>
     </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="pipelineBrowserDock">
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Pipeline Browser</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="pqPipelineBrowserWidget" name="pipelineBrowser">
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
    </widget>
   </widget>
  </widget>

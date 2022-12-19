@@ -6,8 +6,6 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationComponentsInit2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqParaViewBehaviors2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqParaViewBehaviors2.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqAlwaysConnectedBehavior2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqAlwaysConnectedBehavior2.h
 )
 
 target_include_directories(qtguitest

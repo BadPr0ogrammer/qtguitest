@@ -13,11 +13,12 @@
 #include "pqQtConfig2.h"
 #include "vtkCommand2.h"
 #include "vtksys/SystemTools.hxx"
+#include "myLoadDataReaction.h"
+//#include "pqParaViewMenuBuilders2.h"
 /*
 #include "vtkRemotingCoreConfiguration.h"
 #inlude "pqActiveObjects.h"
 #include "pqDeleteReaction.h"
-#include "pqParaViewMenuBuilders.h"
 #include "pqSaveStateReaction.h"
 #include "pqWelcomeDialog.h"
 #include "vtkPVGeneralSettings.h"
@@ -258,6 +259,21 @@ ParaViewMainWindow::ParaViewMainWindow()
   // disabled by default.
   pqParaViewBehaviors::setEnableUsageLoggingBehavior(true);
   */
+  // Create a custom file menu with only Open and close
+  QList<QAction*> actionList = this->Internals->menu_File->actions();
+  QAction* action = actionList.at(0);
+  new myLoadDataReaction(action);
+  QObject::connect(actionList.at(1), SIGNAL(triggered()), QApplication::instance(), SLOT(closeAllWindows()));
+  
+  //pqParaViewMenuBuilders::buildEditMenu(*this->Internals->menu_Edit, this->Internals->propertiesPanel);  
+  // Setup the context menu for the pipeline browser.
+  //pqParaViewMenuBuilders::buildPipelineBrowserContextMenu(*this->Internals->pipelineBrowser->contextMenu());
+  
+  QToolBar* vcrToolbar = new pqVCRToolbar(this) << pqSetName("VCRToolbar");
+  vcrToolbar->layout()->setSpacing(0);
+  QLayout* lay = this->Internals->animationView->layout();
+  lay->setMenuBar(vcrToolbar);
+
   new pqParaViewBehaviors(this, this);
 }
 

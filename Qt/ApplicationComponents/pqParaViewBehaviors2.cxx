@@ -1,8 +1,8 @@
 #include "pqParaViewBehaviors2.h"
 
 #include "pqApplicationCore2.h"
-#include "pqAlwaysConnectedBehavior2.h"
 /* b
+* #include "pqAlwaysConnectedBehavior2.h"
 * #include "pqServerManagerModel.h"
 #include "pqInterfaceTracker.h"
 #include "pqApplyBehavior.h"
@@ -206,7 +206,7 @@ pqParaViewBehaviors::pqParaViewBehaviors(QMainWindow* mainWindow, QObject* paren
     new pqUndoRedoBehavior(this);
   }
   */
-  if (PQ_IS_BEHAVIOR_ENABLED(AlwaysConnectedBehavior))
+  /* b if (PQ_IS_BEHAVIOR_ENABLED(AlwaysConnectedBehavior))
   {
     new pqAlwaysConnectedBehavior(this);
   }

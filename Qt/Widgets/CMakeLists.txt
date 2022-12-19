@@ -7,6 +7,8 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsInit2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsInit2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqQtDeprecated2.h 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqFlatTreeView2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqFlatTreeView2.h
 )
 
 target_include_directories(qtguitest
