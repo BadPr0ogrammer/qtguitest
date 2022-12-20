@@ -25,14 +25,14 @@
 #include "vtkObject.h"
 #include "vtkRemotingCoreModule.h" //needed for exports
 
-class vtkClientServerStream;
-class vtkMultiProcessStream;
+// b class vtkClientServerStream;
+// b class vtkMultiProcessStream;
 
 class VTKREMOTINGCORE_EXPORT vtkPVInformation : public vtkObject
 {
 public:
   vtkTypeMacro(vtkPVInformation, vtkObject);
-  void PrintSelf(ostream& os, vtkIndent indent) override;
+  // b void PrintSelf(ostream& os, vtkIndent indent) override;
 
   /**
    * Transfer information about a single object into this object.
@@ -48,8 +48,8 @@ public:
   /**
    * Manage a serialized version of the information.
    */
-  virtual void CopyToStream(vtkClientServerStream*) = 0;
-  virtual void CopyFromStream(const vtkClientServerStream*);
+  // b virtual void CopyToStream(vtkClientServerStream*) = 0;
+  // b virtual void CopyFromStream(const vtkClientServerStream*);
   //@}
 
   //@{
@@ -59,8 +59,8 @@ public:
    * information itself. For example, PortNumber on vtkPVDataInformation
    * controls what output port the data-information is gathered from.
    */
-  virtual void CopyParametersToStream(vtkMultiProcessStream&){};
-  virtual void CopyParametersFromStream(vtkMultiProcessStream&){};
+  // b virtual void CopyParametersToStream(vtkMultiProcessStream&){};
+  // b virtual void CopyParametersFromStream(vtkMultiProcessStream&){};
   //@}
 
   //@{

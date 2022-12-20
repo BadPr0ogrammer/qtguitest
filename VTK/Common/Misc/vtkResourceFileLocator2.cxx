@@ -1,7 +1,7 @@
 #include "vtkResourceFileLocator2.h"
 
-#include "vtkLogger2.h"
-#include "vtkObjectFactory2.h"
+#include "vtkLogger.h"
+#include "vtkObjectFactory.h"
 
 #include <vtksys/Encoding.hxx>
 #include <vtksys/SystemTools.hxx>

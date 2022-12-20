@@ -57,9 +57,9 @@
 #ifndef vtkPythonInterpreter_h
 #define vtkPythonInterpreter_h
 
-#include "vtkObject2.h"
-#include "vtkPythonInterpreterModule2.h" // For export macro
-#include "vtkStdString2.h"               // needed for vtkStdString.
+#include "vtkObject.h"
+#include "vtkPythonInterpreterModule.h" // For export macro
+#include "vtkStdString.h"               // needed for vtkStdString.
 
 #if defined(_WIN32)
 #include <vector> // for vtkWideArgsConverter

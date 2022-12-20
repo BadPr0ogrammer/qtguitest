@@ -49,6 +49,7 @@ set(CMAKE_AUTOUIC 1)
 
 add_executable(qtguitest main.cpp)
 
+add_compile_definitions(PQPYTHON_STATIC_DEFINE)
 add_compile_definitions(PQAPPLICATIONCOMPONENTS_STATIC_DEFINE)
 add_compile_definitions(PQCOMPONENTS_STATIC_DEFINE)
 add_compile_definitions(PQCORE_STATIC_DEFINE)
@@ -60,7 +61,7 @@ add_compile_definitions(VTKPYTHONINTERPRETER_STATIC_DEFINE)
 add_compile_definitions(VTKWRAPPINGPYTHONCORE_STATIC_DEFINE)
 add_compile_definitions(VTKREMOTINGCORE_STATIC_DEFINE)
 add_compile_definitions(VTKCOMMONMISC_STATIC_DEFINE)
-add_compile_definitions(PQPYTHON_STATIC_DEFINE)
+add_compile_definitions(VTKREMOTINGSERVERMANAGER_STATIC_DEFINE)
 
 add_compile_definitions(VTK_MODULE_ENABLE_ParaView_pqPython)
 

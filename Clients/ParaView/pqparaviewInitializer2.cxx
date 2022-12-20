@@ -13,7 +13,7 @@
 #include "pqPVApplicationCore2.h"
 #include "pqQtDeprecated2.h"
 #include "vtkPVLogger2.h"
-#include "vtkSmartPointer2.h"
+#include "vtkSmartPointer.h"
 /* b
 * #include "vtkSMProxyManager.h"
 #include "vtkRemotingCoreConfiguration.h"

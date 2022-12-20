@@ -32,7 +32,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqPythonUndoCommand_h
 #define pqPythonUndoCommand_h
 
-#include "pqPythonModule2.h"
+#include "pqPythonModule.h"
 
 #include <QTextEdit>
 #include <QUndoCommand>

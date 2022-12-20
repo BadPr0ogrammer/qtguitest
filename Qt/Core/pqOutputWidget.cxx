@@ -3,9 +3,9 @@
 
 #include "pqApplicationCore2.h"
 #include "pqCoreUtilities2.h"
-#include "vtkNew2.h"
-#include "vtkObjectFactory2.h"
-#include "vtkOutputWindow2.h"
+#include "vtkNew.h"
+#include "vtkObjectFactory.h"
+#include "vtkOutputWindow.h"
 /* b 
 #include "pqFileDialog.h"
 #include "pqSettings.h"

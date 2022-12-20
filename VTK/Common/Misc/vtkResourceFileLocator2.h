@@ -32,8 +32,8 @@
 #ifndef vtkResourceFileLocator_h
 #define vtkResourceFileLocator_h
 
-#include "vtkCommonMiscModule2.h" // For export macro
-#include "vtkObject2.h"
+#include "vtkCommonMiscModule.h" // For export macro
+#include "vtkObject.h"
 
 #include <string> // needed for std::string
 #include <vector> // needed for std::vector

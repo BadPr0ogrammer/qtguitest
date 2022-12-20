@@ -1,5 +1,6 @@
 #include "vtkQtDebugLeaksView2.h"
-#include "vtkObjectBase2.h"
+
+#include "vtkObjectBase.h"
 #include "vtkQtDebugLeaksModel2.h"
 
 #include <QCheckBox>

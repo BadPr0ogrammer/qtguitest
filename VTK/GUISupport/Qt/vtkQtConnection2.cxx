@@ -25,7 +25,8 @@
 =========================================================================*/
 
 #include "vtkQtConnection2.h"
-#include "vtkCallbackCommand2.h"
+
+#include "vtkCallbackCommand.h"
 #include "vtkEventQtSlotConnect2.h"
 
 #include <qmetaobject.h>

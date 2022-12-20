@@ -46,8 +46,8 @@
 #ifndef vtkPVLogger_h
 #define vtkPVLogger_h
 
-#include "vtkLogger2.h"
-#include "vtkPVVTKExtensionsCoreModule2.h" // needed for export macro
+#include "vtkLogger.h"
+#include "vtkPVVTKExtensionsCoreModule.h" // needed for export macro
 
 class VTKPVVTKEXTENSIONSCORE_EXPORT vtkPVLogger : public vtkLogger
 {

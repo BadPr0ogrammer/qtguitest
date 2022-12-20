@@ -1,6 +1,6 @@
 // Include vtkPython.h first to avoid python??_d.lib not found linking error on
 // Windows debug builds.
-#include "vtkPython2.h"
+#include "vtkPython.h"
 
 #include "pqPythonDebugLeaksView2.h"
 #include "pqPythonShell.h"

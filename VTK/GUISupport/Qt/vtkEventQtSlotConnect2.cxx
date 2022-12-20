@@ -1,6 +1,8 @@
 #include "vtkEventQtSlotConnect2.h"
-#include "vtkCallbackCommand2.h"
-#include "vtkObjectFactory2.h"
+
+#include "vtkCallbackCommand.h"
+#include "vtkObjectFactory.h"
+
 #include "vtkQtConnection2.h"
 
 #include <vector>

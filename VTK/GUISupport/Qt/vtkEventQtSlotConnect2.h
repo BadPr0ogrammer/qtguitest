@@ -18,9 +18,10 @@
 #define vtkEventQtSlotConnect_h
 
 #include "QVTKWin32Header2.h"       // for export define
-#include "vtkCommand2.h"            // for event defines
-#include "vtkGUISupportQtModule2.h" // For export macro
-#include "vtkObject2.h"
+#include "vtkCommand.h"            // for event defines
+#include "vtkGUISupportQtModule.h" // For export macro
+#include "vtkObject.h"
+
 #include <QtCore/QObject> // for version info
 
 class QObject;

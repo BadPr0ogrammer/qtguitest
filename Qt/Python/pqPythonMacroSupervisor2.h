@@ -32,7 +32,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqPythonMacroSupervisor_h
 #define pqPythonMacroSupervisor_h
 
-#include "pqPythonModule2.h"
+#include "pqPythonModule.h"
 #include <QList>
 #include <QMap>
 #include <QObject>

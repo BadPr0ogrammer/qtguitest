@@ -32,7 +32,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqPythonManager_h
 #define pqPythonManager_h
 
-#include "pqPythonModule2.h" // for exports
+#include "pqPythonModule.h" // for exports
 
 #include <QObject>
 #include <QVector>

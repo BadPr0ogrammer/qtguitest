@@ -3,9 +3,11 @@
 
 #include "pqApplicationCore2.h"
 
-#include "pqQtConfig2.h" // for PARAVIEW_USE_QTHELP
-
+#include "pqQtConfig.h" // for PARAVIEW_USE_QTHELP
+#include "vtkCommand.h"
+#include "vtkLegacy.h"
 #include <vtksys/SystemTools.hxx>
+#include "vtkSmartPointer.h"
 
 // Qt includes.
 #include <QApplication>
@@ -23,20 +25,19 @@
 #include "pqCoreUtilities2.h"
 #include "pqEventDispatcher2.h"
 #include "pqMainWindowEventManager2.h"
-// b #include "pqServer.h"
-
-#include "vtkCommand2.h"
-#include "vtkLegacy2.h"
 #include "vtkPVLogger2.h"
-#include "vtkSmartPointer2.h"
+#include "vtkSMProxy2.h"
+#include "vtkSMProperty2.h"
+#include "vtkSMPropertyIterator2.h"
+#include "vtkPVXMLElement2.h"
 /*
-* #include "pqSettings2.h"
+#include "vtkSMPropertyHelper2.h"
+#include "pqServer.h"
+#include "pqSettings2.h"
 #include "pqInterfaceTracker.h"
 #include "pqXMLUtil.h"
-#include "vtkPVXMLElement.h"
 #include "vtkPVXMLParser.h"
 #include "vtkProcessModule.h"
-#include "vtkSMProxy.h"
 #include "vtkSMSession.h"
 #include "vtkSMSessionProxyManager.h"
 #include "pqStandardServerManagerModelInterface.h"
@@ -64,9 +65,6 @@
 #include "vtkPVGeneralSettings.h"
 #include "vtkPVPluginTracker.h"
 #include "vtkPVView.h"
-#include "vtkSMProperty.h"
-#include "vtkSMPropertyHelper.h"
-#include "vtkSMPropertyIterator.h"
 #include "vtkSMReaderFactory.h"
 #include "vtkSMWriterFactory.h"
 */

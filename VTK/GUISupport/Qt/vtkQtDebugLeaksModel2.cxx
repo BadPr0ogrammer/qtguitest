@@ -1,5 +1,6 @@
 #include "vtkQtDebugLeaksModel2.h"
-#include "vtkDebugLeaks2.h"
+
+#include "vtkDebugLeaks.h"
 
 #include <QCoreApplication>
 #include <QDebug>

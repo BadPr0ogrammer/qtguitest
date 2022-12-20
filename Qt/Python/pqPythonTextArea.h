@@ -1,7 +1,7 @@
 #ifndef pqPythonTextArea_h
 #define pqPythonTextArea_h
 
-#include "pqPythonModule2.h"
+#include "pqPythonModule.h"
 
 #include "pqPythonEditorActions2.h"
 #include "pqPythonUndoCommand2.h"

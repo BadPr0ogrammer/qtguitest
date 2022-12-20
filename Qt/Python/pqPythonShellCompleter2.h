@@ -34,9 +34,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "pqConsoleWidget.h"
 
-#include "pqPythonModule2.h" //  needed for PQPYTHON_EXPORT.
+#include "pqPythonModule.h" //  needed for PQPYTHON_EXPORT.
 
-#include "vtkWeakPointer2.h" // for weak pointer
+#include "vtkWeakPointer.h" // for weak pointer
 
 class vtkPythonInteractiveInterpreter;
 

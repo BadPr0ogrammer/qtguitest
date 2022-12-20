@@ -1,9 +1,9 @@
 #ifndef pqApplicationCore_h
 #define pqApplicationCore_h
 
-#include "pqCoreModule2.h"
+#include "pqCoreModule.h"
 #include "vtkParaViewDeprecation2.h" // for PARAVIEW_DEPRECATED_IN_5_10_0
-#include "vtkSmartPointer2.h"        // for vtkSmartPointer
+#include "vtkSmartPointer.h"        // for vtkSmartPointer
 #include <QObject>
 #include <QPointer>
 #include <exception> // for std::exception

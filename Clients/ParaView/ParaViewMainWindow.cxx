@@ -5,14 +5,15 @@
 #include "ParaViewMainWindow.h"
 #include "ui_ParaViewMainWindow.h"
 
+#include "pqQtConfig.h"
+#include "vtkCommand.h"
+#include "vtksys/SystemTools.hxx"
+
 #include "pqApplicationCore2.h"
 #include "pqCoreUtilities2.h"
 #include "pqTimer2.h"
 #include "pqMainWindowEventManager2.h"
 #include "pqParaViewBehaviors2.h"
-#include "pqQtConfig2.h"
-#include "vtkCommand2.h"
-#include "vtksys/SystemTools.hxx"
 /*
 #include "pqParaViewMenuBuilders.h"
 #include "vtkRemotingCoreConfiguration.h"

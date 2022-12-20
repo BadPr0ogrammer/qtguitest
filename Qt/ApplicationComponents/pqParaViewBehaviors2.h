@@ -1,9 +1,9 @@
 #ifndef pqParaViewBehaviors_h
 #define pqParaViewBehaviors_h
 
-#include "pqApplicationComponentsModule2.h"
+#include "pqApplicationComponentsModule.h"
 
-#include "vtkSetGet2.h" // for VTK_LEGACY.
+#include "vtkSetGet.h" // for VTK_LEGACY.
 
 #include <QFlags>
 #include <QObject>

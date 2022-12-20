@@ -26,7 +26,7 @@
 #ifndef vtkQtDebugLeaksView_h
 #define vtkQtDebugLeaksView_h
 
-#include "vtkGUISupportQtModule2.h" // For export macro
+#include "vtkGUISupportQtModule.h" // For export macro
 #include <QWidget>
 
 class QModelIndex;

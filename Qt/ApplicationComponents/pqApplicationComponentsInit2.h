@@ -1,7 +1,7 @@
 #ifndef pqApplicationComponentsInit_h
 #define pqApplicationComponentsInit_h
 
-#include "pqApplicationComponentsModule2.h"
+#include "pqApplicationComponentsModule.h"
 
 /**
  * pqApplicationComponentsInit() is for initializing QT resources. When pqApplicationComponents

@@ -1,7 +1,7 @@
 #ifndef pqConsoleWidget_h
 #define pqConsoleWidget_h
 
-#include "pqWidgetsModule2.h"
+#include "pqWidgetsModule.h"
 
 #include <QCompleter>
 #include <QTextCharFormat>

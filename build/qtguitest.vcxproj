@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC5D1E6D-6B99-3647-9BD1-52EC86252DA3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>qtguitest</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\qtguitest\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qtguitest.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qtguitest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\qtguitest\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtguitest.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qtguitest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\qtguitest\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">qtguitest.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">qtguitest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\qtguitest\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">qtguitest.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">qtguitest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_Debug;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/qt5" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtCore" /external:I "C:/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtWidgets" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtGui"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_Debug;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_Debug;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target qtguitest</Message>
+      <Command>setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/qtguitest/build/CMakeFiles/qtguitest_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/qtguitest/build/qtguitest_autogen/autouic_Debug.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\debug\lib\Qt5Widgetsd.lib;C:\qtguitest\..\ParaView-v5.11.0\out\install\x64-Debug\lib\vtksys-pv5.11d.lib;C:\qtguitest\..\Python311\libs\python311_d.lib;C:\vcpkg\installed\x64-windows\debug\lib\Qt5Guid.lib;C:\vcpkg\installed\x64-windows\debug\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/qtguitest/build/lib/Debug/qtguitest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/qtguitest/build/bin/Debug/qtguitest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_Release;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/qt5" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtCore" /external:I "C:/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtWidgets" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtGui"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_Release;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_Release;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target qtguitest</Message>
+      <Command>setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/qtguitest/build/CMakeFiles/qtguitest_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/qtguitest/build/qtguitest_autogen/autouic_Release.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\Qt5Widgets.lib;C:\qtguitest\..\ParaView-v5.11.0\out\install\x64-Debug\lib\vtksys-pv5.11d.lib;C:\qtguitest\..\Python311\libs\python311_d.lib;C:\vcpkg\installed\x64-windows\lib\Qt5Gui.lib;C:\vcpkg\installed\x64-windows\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/qtguitest/build/lib/Release/qtguitest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/qtguitest/build/bin/Release/qtguitest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/qt5" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtCore" /external:I "C:/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtWidgets" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtGui"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target qtguitest</Message>
+      <Command>setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/qtguitest/build/CMakeFiles/qtguitest_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/qtguitest/build/qtguitest_autogen/autouic_MinSizeRel.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\Qt5Widgets.lib;C:\qtguitest\..\ParaView-v5.11.0\out\install\x64-Debug\lib\vtksys-pv5.11d.lib;C:\qtguitest\..\Python311\libs\python311_d.lib;C:\vcpkg\installed\x64-windows\lib\Qt5Gui.lib;C:\vcpkg\installed\x64-windows\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/qtguitest/build/lib/MinSizeRel/qtguitest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/qtguitest/build/bin/MinSizeRel/qtguitest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/vcpkg/installed/x64-windows/include/qt5" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtCore" /external:I "C:/vcpkg/installed/x64-windows/tools/qt5/mkspecs/win32-msvc" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtWidgets" /external:I "C:/vcpkg/installed/x64-windows/include/qt5/QtGui"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PARAVIEW_USE_PYTHON;PQPYTHON_STATIC_DEFINE;PQAPPLICATIONCOMPONENTS_STATIC_DEFINE;PQCOMPONENTS_STATIC_DEFINE;PQCORE_STATIC_DEFINE;PQWIDGETS_STATIC_DEFINE;VTKCOMMONCORE_STATIC_DEFINE;VTKPVVTKEXTENSIONSCORE_STATIC_DEFINE;VTKGUISUPPORTQT_STATIC_DEFINE;VTKPYTHONINTERPRETER_STATIC_DEFINE;VTKWRAPPINGPYTHONCORE_STATIC_DEFINE;VTKREMOTINGCORE_STATIC_DEFINE;VTKCOMMONMISC_STATIC_DEFINE;VTKREMOTINGSERVERMANAGER_STATIC_DEFINE;VTK_MODULE_ENABLE_ParaView_pqPython;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo;C:\qtguitest\include\paraview-5.11;C:\qtguitest\include\paraview-5.11\vtkkwiml;C:\qtguitest\include\paraview-5.11\vtksys;C:\qtguitest\include\paraview-5.11\vtkqttesting;C:\qtguitest\include\paraview-5.11\pvpythonmodules;C:\qtguitest\include\paraview-5.11\vtkpythonmodules;C:\qtguitest\include\paraview-5.11\vtkprotobuf\src;C:\qtguitest\..\Python311\include;C:\qtguitest\Clients\ParaView;C:\qtguitest\Qt\ApplicationComponents;C:\qtguitest\Qt\Components;C:\qtguitest\Qt\Core;C:\qtguitest\Qt\Python;C:\qtguitest\Qt\Widgets;C:\qtguitest\VTK\Common\Core;C:\qtguitest\VTK\Common\Misc;C:\qtguitest\VTK\GUISupport\Qt;C:\qtguitest\VTK\Utilities\PythonInterpreter;C:\qtguitest\VTK\Wrapping\PythonCore;C:\qtguitest\VTKExtensions\Core;C:\qtguitest\Remoting\Core;C:\qtguitest\Remoting\ServerManager;C:\vcpkg\installed\x64-windows\include\qt5;C:\vcpkg\installed\x64-windows\include\qt5\QtCore;C:\vcpkg\installed\x64-windows\tools\qt5\mkspecs\win32-msvc;C:\vcpkg\installed\x64-windows\include\qt5\QtWidgets;C:\vcpkg\installed\x64-windows\include\qt5\QtGui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target qtguitest</Message>
+      <Command>setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/qtguitest/build/CMakeFiles/qtguitest_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/qtguitest/build/qtguitest_autogen/autouic_RelWithDebInfo.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\vcpkg\installed\x64-windows\lib\Qt5Widgets.lib;C:\qtguitest\..\ParaView-v5.11.0\out\install\x64-Debug\lib\vtksys-pv5.11d.lib;C:\qtguitest\..\Python311\libs\python311_d.lib;C:\vcpkg\installed\x64-windows\lib\Qt5Gui.lib;C:\vcpkg\installed\x64-windows\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/qtguitest/build/lib/RelWithDebInfo/qtguitest.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/qtguitest/build/bin/RelWithDebInfo/qtguitest.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\qtguitest\build\CMakeFiles\e5219f119477f8612bc5562758e0aa5a\autouic_(CONFIG).stamp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\qtguitest\Clients\ParaView\ParaViewMainWindow.ui;C:\qtguitest\Qt\Components\pqPropertiesPanel.ui;C:\qtguitest\Qt\Components\pqSearchBox.ui;C:\qtguitest\Qt\Core\pqOutputWidget.ui;C:\qtguitest\Qt\Python\pqPythonShell.ui;C:\qtguitest\Qt\Widgets\pqExpanderButton.ui;C:\vcpkg\installed\x64-windows\tools\qt5\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\qtguitest\build\qtguitest_autogen\autouic_Debug.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\qtguitest\Clients\ParaView\ParaViewMainWindow.ui;C:\qtguitest\Qt\Components\pqPropertiesPanel.ui;C:\qtguitest\Qt\Components\pqSearchBox.ui;C:\qtguitest\Qt\Core\pqOutputWidget.ui;C:\qtguitest\Qt\Python\pqPythonShell.ui;C:\qtguitest\Qt\Widgets\pqExpanderButton.ui;C:\vcpkg\installed\x64-windows\tools\qt5\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\qtguitest\build\qtguitest_autogen\autouic_Release.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\qtguitest\Clients\ParaView\ParaViewMainWindow.ui;C:\qtguitest\Qt\Components\pqPropertiesPanel.ui;C:\qtguitest\Qt\Components\pqSearchBox.ui;C:\qtguitest\Qt\Core\pqOutputWidget.ui;C:\qtguitest\Qt\Python\pqPythonShell.ui;C:\qtguitest\Qt\Widgets\pqExpanderButton.ui;C:\vcpkg\installed\x64-windows\tools\qt5\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\qtguitest\build\qtguitest_autogen\autouic_MinSizeRel.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd C:\qtguitest\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\qtguitest\Clients\ParaView\ParaViewMainWindow.ui;C:\qtguitest\Qt\Components\pqPropertiesPanel.ui;C:\qtguitest\Qt\Components\pqSearchBox.ui;C:\qtguitest\Qt\Core\pqOutputWidget.ui;C:\qtguitest\Qt\Python\pqPythonShell.ui;C:\qtguitest\Qt\Widgets\pqExpanderButton.ui;C:\vcpkg\installed\x64-windows\tools\qt5\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\qtguitest\build\qtguitest_autogen\autouic_RelWithDebInfo.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\qtguitest\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/qtguitest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/qtguitest -BC:/qtguitest/build --check-stamp-file C:/qtguitest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5Config.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ModuleLocation.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\qtguitest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/qtguitest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/qtguitest -BC:/qtguitest/build --check-stamp-file C:/qtguitest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5Config.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ModuleLocation.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\qtguitest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/qtguitest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/qtguitest -BC:/qtguitest/build --check-stamp-file C:/qtguitest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5Config.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ModuleLocation.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\qtguitest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/qtguitest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/qtguitest -BC:/qtguitest/build --check-stamp-file C:/qtguitest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeFindFrameworks.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\FindPythonLibs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\SelectLibraryConfigurations.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;C:\qtguitest\build\CMakeFiles\3.25.0\CMakeSystem.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5Config.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5\Qt5ModuleLocation.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJp2Plugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\vcpkg\installed\x64-windows\share\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\qtguitest\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\main.cpp" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkkwiml\abi.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkkwiml\int.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Base64.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\CommandLineArguments.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Configure.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Configure.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Directory.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\DynamicLoader.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Encoding.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Encoding.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\FStream.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Glob.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\MD5.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Process.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\RegularExpression.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\SharedForward.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Status.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\String.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\System.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\SystemInformation.hxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\SystemTools.hxx" />
+    <ClCompile Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqTimer2.cxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqTimer2.h" />
+    <ClCompile Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqEventDispatcher2.cxx" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqEventDispatcher2.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\QtTestingExport2.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkprotobuf\src\google\protobuf\any.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqApplicationComponentsModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqComponentsModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqCoreModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqPythonModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqQtConfig.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqWidgetsModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkBuild.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkCommonCoreModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkCommonDataModelModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkCommonMiscModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkDebug.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkFeatures.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkGUISupportQtModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkIOXMLParserModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkLegacy.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkOptions.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPlatform.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPVVersion.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPVVTKExtensionsCoreModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPython.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPythonCompatibility.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPythonConfigure.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPythonInterpreterModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingApplicationModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingCoreModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingServerManagerModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingSettingsModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkThreads.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkVersionFull.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkVersionMacros.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkWrappingPythonCoreModule.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_cli11.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_cli11_external.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_cli11_forward.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_kwiml.h" />
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_protobuf.h" />
+    <ClCompile Include="C:\qtguitest\Clients\ParaView\ParaViewMainWindow.cxx" />
+    <None Include="C:\qtguitest\Clients\ParaView\ParaViewMainWindow.ui">
+    </None>
+    <ClInclude Include="C:\qtguitest\Clients\ParaView\ParaViewMainWindow.h" />
+    <ClCompile Include="C:\qtguitest\Clients\ParaView\pqparaviewInitializer2.cxx" />
+    <ClInclude Include="C:\qtguitest\Clients\ParaView\pqparaviewInitializer2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\ApplicationComponents\pqApplicationComponentsInit2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\ApplicationComponents\pqApplicationComponentsInit2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\ApplicationComponents\pqParaViewBehaviors2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\ApplicationComponents\pqParaViewBehaviors2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\ApplicationComponents\pqPVApplicationCore2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\ApplicationComponents\pqPVApplicationCore2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqComponentsInit2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqComponentsInit2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPipelineBrowserWidget.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPipelineBrowserWidget.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPropertiesPanel.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPropertiesPanel.h" />
+    <None Include="C:\qtguitest\Qt\Components\pqPropertiesPanel.ui">
+    </None>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPropertyWidget2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPropertyWidget2.cxx" />
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPropertyWidgetDecorator2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPropertyWidgetDecorator2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqProxyWidget2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqProxyWidget2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqSearchBox.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqSearchBox.h" />
+    <None Include="C:\qtguitest\Qt\Components\pqSearchBox.ui">
+    </None>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqApplicationCore2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqApplicationCore2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqCoreInit2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqCoreInit2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqCoreUtilities2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqCoreUtilities2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqMainWindowEventManager2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqMainWindowEventManager2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqOutputPort2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqOutputPort2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqOutputWidget.cxx" />
+    <None Include="C:\qtguitest\Qt\Core\pqOutputWidget.ui">
+    </None>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqOutputWidget.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqPipelineSource2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqPipelineSource2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqProxy2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqProxy2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqRepresentation2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqRepresentation2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqServerManagerModelItem2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqServerManagerModelItem2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqTimeKeeper2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqTimeKeeper2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonDebugLeaksView2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonDebugLeaksView2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonEditorActions2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonEditorActions2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonFileIO2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonFileIO2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonLineNumberArea2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonLineNumberArea2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonMacroSupervisor2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonMacroSupervisor2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonManager2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonManager2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonScriptEditor2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonScriptEditor2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonShell.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonShell.h" />
+    <None Include="C:\qtguitest\Qt\Python\pqPythonShell.ui">
+    </None>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonShellCompleter2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonShellCompleter2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonTextArea.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonTextArea.h" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonTextArea.txx" />
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonUndoCommand2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonUndoCommand2.h" />
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonUtils2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqConsoleWidget.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqConsoleWidget.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqExpanderButton.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqExpanderButton.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqFlatTreeView2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqFlatTreeView2.h" />
+    <None Include="C:\qtguitest\Qt\Widgets\pqExpanderButton.ui">
+    </None>
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqQtDeprecated2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqSetName2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqSetName2.h" />
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqWidgetsInit2.cxx" />
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqWidgetsInit2.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkABI.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCallbackCommand.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCallbackCommand.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCollection.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCollection.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCollectionIterator.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCollectionIterator.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCommand.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCommand.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCompiler.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaks.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaks.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaksManager.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaksManager.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDeprecation.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkDynamicLoader.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDynamicLoader.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollector.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollector.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollectorManager.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollectorManager.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkIndent.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkIndent.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkLargeInteger.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkLargeInteger.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkLogger.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkLogger.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkMeta.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkMultiThreader.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkMultiThreader.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkNew.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObject.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObject.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObjectBase.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObjectBase.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactory.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactory.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactoryCollection.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactoryCollection.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOStreamWrapper.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOStreamWrapper.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOStrStreamWrapper.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOStrStreamWrapper.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOutputWindow.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOutputWindow.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformation.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformation.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformationCollection.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformationCollection.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSetGet.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSmartPointer.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkSmartPointerBase.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSmartPointerBase.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkStdString.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkStdString.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkStringOutputWindow.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkStringOutputWindow.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSystemIncludes.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkTimeStamp.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkTimeStamp.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkType.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkVersion.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkVersion.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWeakPointer.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkWeakPointerBase.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWeakPointerBase.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWin32Header.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkWin32OutputWindow.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWin32OutputWindow.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWindows.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWrappingHints.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkVariant.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDataArray.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkMath.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkStringArray.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkVariantArray.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkIdList.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Common\Misc\vtkResourceFileLocator2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Common\Misc\vtkResourceFileLocator2.h" />
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksView2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksView2.h" />
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksModel2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksModel2.h" />
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkEventQtSlotConnect2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkEventQtSlotConnect2.h" />
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtConnection2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtConnection2.h" />
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\QVTKWin32Header2.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInteractiveInterpreter2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInteractiveInterpreter2.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInterpreter2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInterpreter2.h" />
+    <ClInclude Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonStdStreamCaptureHelper2.h" />
+    <ClCompile Include="C:\qtguitest\VTK\Wrapping\PythonCore\vtkSmartPyObject2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTK\Wrapping\PythonCore\vtkSmartPyObject2.h" />
+    <ClCompile Include="C:\qtguitest\VTKExtensions\Core\vtkPVLogger2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTKExtensions\Core\vtkPVLogger2.h" />
+    <ClCompile Include="C:\qtguitest\VTKExtensions\Core\vtkPVXMLElement2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTKExtensions\Core\vtkPVXMLElement2.h" />
+    <ClCompile Include="C:\qtguitest\VTKExtensions\Core\vtkStringList2.cxx" />
+    <ClInclude Include="C:\qtguitest\VTKExtensions\Core\vtkStringList2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkNetworkAccessManager2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkNetworkAccessManager2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkParaViewDeprecation2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkPVInformation2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkPVInformation2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkPVSession2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkPVSession2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkSession2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkSession2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkPVSessionBase2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkPVSessionBase2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMMessageMinimal2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMObject2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMObject2.cxx" />
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMProperty2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProperty2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMPropertyHelper2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxyInternals2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMPropertyIterator2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxy2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxy2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxyIterator2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxyManager2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMRemoteObject2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMRemoteObject2.cxx" />
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMSession2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSession2.h" />
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionObject2.cxx" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionObject2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionProxyManagerInternals2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionProxyManager2.h" />
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSourceProxy2.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Clients\ParaView\ui_ParaViewMainWindow.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Components\ui_pqPropertiesPanel.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Components\ui_pqSearchBox.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Core\ui_pqOutputWidget.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Python\ui_pqPythonShell.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Widgets\ui_pqExpanderButton.h" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_Debug.stamp">
+    </None>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Clients\ParaView\ui_ParaViewMainWindow.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Components\ui_pqPropertiesPanel.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Components\ui_pqSearchBox.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Core\ui_pqOutputWidget.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Python\ui_pqPythonShell.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Widgets\ui_pqExpanderButton.h" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_Release.stamp">
+    </None>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Clients\ParaView\ui_ParaViewMainWindow.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Components\ui_pqPropertiesPanel.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Components\ui_pqSearchBox.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Core\ui_pqOutputWidget.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Python\ui_pqPythonShell.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Widgets\ui_pqExpanderButton.h" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_MinSizeRel.stamp">
+    </None>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Clients\ParaView\ui_ParaViewMainWindow.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Components\ui_pqPropertiesPanel.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Components\ui_pqSearchBox.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Core\ui_pqOutputWidget.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Python\ui_pqPythonShell.h" />
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Widgets\ui_pqExpanderButton.h" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_RelWithDebInfo.stamp">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\qtguitest\build\ZERO_CHECK.vcxproj">
+      <Project>{ADBFD089-65E3-375F-96E6-9FCFD08B68F3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

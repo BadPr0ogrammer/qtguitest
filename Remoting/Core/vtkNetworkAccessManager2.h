@@ -10,8 +10,8 @@
 #ifndef vtkNetworkAccessManager_h
 #define vtkNetworkAccessManager_h
 
-#include "vtkObject2.h"
-#include "vtkRemotingCoreModule2.h" //needed for exports
+#include "vtkObject.h"
+#include "vtkRemotingCoreModule.h" //needed for exports
 
 class vtkMultiProcessController;
 
@@ -19,7 +19,7 @@ class VTKREMOTINGCORE_EXPORT vtkNetworkAccessManager : public vtkObject
 {
 public:
   vtkTypeMacro(vtkNetworkAccessManager, vtkObject);
-  void PrintSelf(ostream& os, vtkIndent indent) override;
+  // b void PrintSelf(ostream& os, vtkIndent indent) override;
 
   /**
    * Possible result of connection when creating a new connection

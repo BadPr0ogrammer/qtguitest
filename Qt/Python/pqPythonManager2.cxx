@@ -1,6 +1,11 @@
 // Include vtkPython.h first to avoid python??_d.lib not found linking error on
 // Windows debug builds.
-#include <vtkPython2.h>
+#include <vtkPython.h>
+
+#include "vtkCommand.h"
+#include "vtkNew.h"
+#include "vtkObjectFactory.h"
+#include "vtkOutputWindow.h"
 
 #include "pqPythonManager2.h"
 
@@ -11,13 +16,9 @@
 #include "pqPythonScriptEditor2.h"
 // b #include "pqServer.h"
 // b #include "pqServerManagerModel.h"
-#include "vtkCommand2.h"
-#include "vtkNew2.h"
-#include "vtkObjectFactory2.h"
-#include "vtkOutputWindow2.h"
 #include "vtkPythonInteractiveInterpreter2.h"
 #include "vtkPythonInterpreter2.h"
-#include "vtkSmartPointer2.h"
+#include "vtkSmartPointer.h"
 
 #include <QCoreApplication>
 #include <QDebug>

@@ -33,7 +33,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqPythonFileIO_h
 #define pqPythonFileIO_h
 
-#include "pqPythonModule2.h"
+#include "pqPythonModule.h"
 
 #include "pqPythonUtils2.h"
 

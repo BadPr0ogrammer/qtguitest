@@ -33,7 +33,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqSetName_h
 #define pqSetName_h
 
-#include "pqWidgetsModule2.h"
+#include "pqWidgetsModule.h"
 #include <QString>
 
 /**

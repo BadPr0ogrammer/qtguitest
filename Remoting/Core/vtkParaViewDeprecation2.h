@@ -22,7 +22,7 @@
 #ifndef vtkParaViewDeprecation_h
 #define vtkParaViewDeprecation_h
 
-#include "vtkPVVersion2.h"
+#include "vtkPVVersion.h"
 
 //----------------------------------------------------------------------------
 // These macros may be used to deprecate APIs in ParaView. They act as

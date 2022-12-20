@@ -1,0 +1,3 @@
+C:/qtguitest/build/CMakeFiles/qtguitest.dir
+C:/qtguitest/build/CMakeFiles/ALL_BUILD.dir
+C:/qtguitest/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,7 +1,7 @@
 #ifndef pqCoreInit_h
 #define pqCoreInit_h
 
-#include "pqCoreModule2.h"
+#include "pqCoreModule.h"
 
 /**
  * pqCoreInit() is for initializing QT resources. When pqCore is built

@@ -33,7 +33,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqMainWindowEventManager_h
 #define pqMainWindowEventManager_h
 
-#include "pqCoreModule2.h"
+#include "pqCoreModule.h"
 #include <QObject>
 
 class QCloseEvent;

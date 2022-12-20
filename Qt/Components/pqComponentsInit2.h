@@ -1,7 +1,7 @@
 #ifndef pqComponentsInit_h
 #define pqComponentsInit_h
 
-#include "pqComponentsModule2.h"
+#include "pqComponentsModule.h"
 
 /**
  * pqComponentsInit() is for initializing QT resources. When pqComponents is built

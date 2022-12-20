@@ -1,11 +1,11 @@
-#include "vtkPython2.h"
-
 #include "vtkPythonInteractiveInterpreter2.h"
+#include "vtkPython.h"
 
-#include "vtkCommand2.h"
-#include "vtkObjectFactory2.h"
+#include "vtkCommand.h"
+#include "vtkObjectFactory.h"
+#include "vtkSmartPointer.h"
+
 #include "vtkPythonInterpreter2.h"
-#include "vtkSmartPointer2.h"
 
 #include <string>
 class vtkPythonInteractiveInterpreter::vtkInternals

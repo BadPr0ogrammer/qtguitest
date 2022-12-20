@@ -121,6 +121,24 @@
     </property>
    </widget>
   </widget>
+<widget class="QDockWidget" name="propertiesDock">
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>41</height>
+    </size>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Properties</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="pqPropertiesPanel" name="propertiesPanel"/>
+  </widget> 
  </widget>
  <customwidgets>
   <customwidget>
@@ -129,6 +147,12 @@
    <header>pqOutputWidget.h</header>
    <container>1</container>
   </customwidget>
+ <customwidget>
+   <class>pqPropertiesPanel</class>
+   <extends>QWidget</extends>
+   <header>pqPropertiesPanel.h</header>
+   <container>1</container>
+  </customwidget>  
  </customwidgets>
  <resources/>
  <connections/>

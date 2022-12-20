@@ -1,0 +1,954 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqTimer2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqEventDispatcher2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Clients\ParaView\ParaViewMainWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Clients\ParaView\pqparaviewInitializer2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\ApplicationComponents\pqApplicationComponentsInit2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\ApplicationComponents\pqParaViewBehaviors2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\ApplicationComponents\pqPVApplicationCore2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqComponentsInit2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPipelineBrowserWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPropertiesPanel.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPropertyWidget2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqPropertyWidgetDecorator2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqProxyWidget2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Components\pqSearchBox.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqApplicationCore2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqCoreInit2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqCoreUtilities2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqMainWindowEventManager2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqOutputPort2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqOutputWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqPipelineSource2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqProxy2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqRepresentation2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqServerManagerModelItem2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Core\pqTimeKeeper2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonDebugLeaksView2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonEditorActions2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonFileIO2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonLineNumberArea2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonMacroSupervisor2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonManager2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonScriptEditor2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonShell.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonShellCompleter2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonTextArea.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Python\pqPythonUndoCommand2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqConsoleWidget.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqExpanderButton.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqFlatTreeView2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqSetName2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Qt\Widgets\pqWidgetsInit2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCallbackCommand.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCollectionIterator.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkCommand.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaks.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaksManager.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkDynamicLoader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollector.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollectorManager.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkIndent.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkLargeInteger.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkLogger.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkMultiThreader.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObject.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObjectBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactory.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactoryCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOStreamWrapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOStrStreamWrapper.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformation.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformationCollection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkSmartPointerBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkStdString.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkStringOutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkTimeStamp.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkVersion.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkWeakPointerBase.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Core\vtkWin32OutputWindow.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Common\Misc\vtkResourceFileLocator2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksView2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksModel2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkEventQtSlotConnect2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtConnection2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInteractiveInterpreter2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInterpreter2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTK\Wrapping\PythonCore\vtkSmartPyObject2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTKExtensions\Core\vtkPVLogger2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTKExtensions\Core\vtkPVXMLElement2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\VTKExtensions\Core\vtkStringList2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkNetworkAccessManager2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkPVInformation2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkPVSession2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\Core\vtkSession2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkPVSessionBase2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMObject2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMProperty2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxy2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMRemoteObject2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMSession2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionObject2.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\qtguitest\build\qtguitest_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkkwiml\abi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkkwiml\int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\CommandLineArguments.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Configure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Configure.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Directory.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\DynamicLoader.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Encoding.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\FStream.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Glob.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\MD5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\RegularExpression.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\SharedForward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\Status.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\String.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\SystemInformation.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtksys\SystemTools.hxx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqTimer2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\pqEventDispatcher2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkqttesting\QtTestingExport2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkprotobuf\src\google\protobuf\any.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqApplicationComponentsModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqComponentsModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqPythonModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqQtConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\pqWidgetsModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkBuild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkCommonCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkCommonDataModelModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkCommonMiscModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkFeatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkGUISupportQtModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkIOXMLParserModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkLegacy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPlatform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPVVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPVVTKExtensionsCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPython.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPythonCompatibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPythonConfigure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkPythonInterpreterModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingApplicationModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingServerManagerModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkRemotingSettingsModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkThreads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkVersionFull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkVersionMacros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtkWrappingPythonCoreModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_cli11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_cli11_external.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_cli11_forward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_kwiml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\include\paraview-5.11\vtk_protobuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Clients\ParaView\ParaViewMainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Clients\ParaView\pqparaviewInitializer2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\ApplicationComponents\pqApplicationComponentsInit2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\ApplicationComponents\pqParaViewBehaviors2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\ApplicationComponents\pqPVApplicationCore2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqComponentsInit2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPipelineBrowserWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPropertiesPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPropertyWidget2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqPropertyWidgetDecorator2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqProxyWidget2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Components\pqSearchBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqApplicationCore2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqCoreInit2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqCoreUtilities2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqMainWindowEventManager2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqOutputPort2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqOutputWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqPipelineSource2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqProxy2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqRepresentation2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqServerManagerModelItem2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Core\pqTimeKeeper2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonDebugLeaksView2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonEditorActions2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonFileIO2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonLineNumberArea2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonMacroSupervisor2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonManager2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonScriptEditor2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonShellCompleter2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonTextArea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonTextArea.txx">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonUndoCommand2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Python\pqPythonUtils2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqConsoleWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqExpanderButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqFlatTreeView2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqQtDeprecated2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqSetName2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Qt\Widgets\pqWidgetsInit2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkABI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCallbackCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCollectionIterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkCompiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDebugLeaksManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDeprecation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDynamicLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkGarbageCollectorManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkIndent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkLargeInteger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkMeta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkMultiThreader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkNew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObjectBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkObjectFactoryCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOStreamWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOStrStreamWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkOverrideInformationCollection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSetGet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSmartPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSmartPointerBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkStdString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkStringOutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkSystemIncludes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkTimeStamp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWeakPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWeakPointerBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWin32Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWin32OutputWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWindows.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkWrappingHints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkVariant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkDataArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkStringArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkVariantArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Core\vtkIdList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Common\Misc\vtkResourceFileLocator2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksView2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtDebugLeaksModel2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkEventQtSlotConnect2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\vtkQtConnection2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\GUISupport\Qt\QVTKWin32Header2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInteractiveInterpreter2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonInterpreter2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Utilities\PythonInterpreter\vtkPythonStdStreamCaptureHelper2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTK\Wrapping\PythonCore\vtkSmartPyObject2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTKExtensions\Core\vtkPVLogger2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTKExtensions\Core\vtkPVXMLElement2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\VTKExtensions\Core\vtkStringList2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkNetworkAccessManager2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkParaViewDeprecation2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkPVInformation2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkPVSession2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\Core\vtkSession2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkPVSessionBase2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMMessageMinimal2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMObject2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProperty2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMPropertyHelper2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxyInternals2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMPropertyIterator2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxy2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxyIterator2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMProxyManager2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMRemoteObject2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSession2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionObject2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionProxyManagerInternals2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSessionProxyManager2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\Remoting\ServerManager\vtkSMSourceProxy2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Clients\ParaView\ui_ParaViewMainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Components\ui_pqPropertiesPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Components\ui_pqSearchBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Core\ui_pqOutputWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Python\ui_pqPythonShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Debug\Qt\Widgets\ui_pqExpanderButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Clients\ParaView\ui_ParaViewMainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Components\ui_pqPropertiesPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Components\ui_pqSearchBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Core\ui_pqOutputWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Python\ui_pqPythonShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_Release\Qt\Widgets\ui_pqExpanderButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Clients\ParaView\ui_ParaViewMainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Components\ui_pqPropertiesPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Components\ui_pqSearchBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Core\ui_pqOutputWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Python\ui_pqPythonShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_MinSizeRel\Qt\Widgets\ui_pqExpanderButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Clients\ParaView\ui_ParaViewMainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Components\ui_pqPropertiesPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Components\ui_pqSearchBox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Core\ui_pqOutputWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Python\ui_pqPythonShell.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\qtguitest\build\qtguitest_autogen\include_RelWithDebInfo\Qt\Widgets\ui_pqExpanderButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\qtguitest\build\CMakeFiles\e5219f119477f8612bc5562758e0aa5a\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\qtguitest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\qtguitest\Clients\ParaView\ParaViewMainWindow.ui" />
+    <None Include="C:\qtguitest\Qt\Components\pqPropertiesPanel.ui" />
+    <None Include="C:\qtguitest\Qt\Components\pqSearchBox.ui" />
+    <None Include="C:\qtguitest\Qt\Core\pqOutputWidget.ui" />
+    <None Include="C:\qtguitest\Qt\Python\pqPythonShell.ui" />
+    <None Include="C:\qtguitest\Qt\Widgets\pqExpanderButton.ui" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_Debug.stamp" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_Release.stamp" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\qtguitest\build\qtguitest_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DE6287D3-CDA1-3263-B290-6E8CAD6F49F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8B1F8D76-5E5A-3031-8690-3D8D35CF5E4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8C216F88-9F38-3333-AFCB-36679CF4EC37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

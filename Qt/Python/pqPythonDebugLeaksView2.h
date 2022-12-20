@@ -34,7 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "vtkQtDebugLeaksView2.h"
 
-#include "pqPythonModule2.h" // for exports
+#include "pqPythonModule.h" // for exports
 #include <QPointer>         // for QPointer
 
 /**

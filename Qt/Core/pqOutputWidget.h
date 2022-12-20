@@ -34,7 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include <QWidget>
 
-#include "pqCoreModule2.h" // for exports
+#include "pqCoreModule.h" // for exports
 #include <QScopedPointer> // for QScopedPointer.
 
 class pqOutputWidget;

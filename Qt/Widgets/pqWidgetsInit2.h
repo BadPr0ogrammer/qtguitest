@@ -1,7 +1,7 @@
 #ifndef pqWidgetsInit_h
 #define pqWidgetsInit_h
 
-#include "pqWidgetsModule2.h"
+#include "pqWidgetsModule.h"
 
 /**
  * pqWidgetsInit() is for initializing QT resources. When pqWidgets is built

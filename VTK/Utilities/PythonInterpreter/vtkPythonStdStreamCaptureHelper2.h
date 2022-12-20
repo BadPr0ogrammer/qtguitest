@@ -21,7 +21,7 @@
 #define vtkPythonStdStreamCaptureHelper_h
 
 #include "structmember.h"
-#include "vtkPythonCompatibility2.h"
+#include "vtkPythonCompatibility.h"
 #include "vtkPythonInterpreter2.h"
 
 struct vtkPythonStdStreamCaptureHelper

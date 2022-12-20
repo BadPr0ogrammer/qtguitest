@@ -1,16 +1,17 @@
 #include "vtkPythonInterpreter2.h"
-#include "vtkPython2.h" // this must be the first include.
+#include "vtkPython.h" // this must be the first include.
 
-#include "vtkBuild2.h"
-#include "vtkCommand2.h"
-#include "vtkLogger2.h"
-#include "vtkNew2.h"
-#include "vtkObjectFactory2.h"
-#include "vtkOutputWindow2.h"
+#include "vtkBuild.h"
+#include "vtkCommand.h"
+#include "vtkLogger.h"
+#include "vtkNew.h"
+#include "vtkObjectFactory.h"
+#include "vtkOutputWindow.h"
+#include "vtkVersion.h"
+#include "vtkWeakPointer.h"
+
 #include "vtkPythonStdStreamCaptureHelper2.h"
 // b #include "vtkResourceFileLocator.h"
-#include "vtkVersion2.h"
-#include "vtkWeakPointer2.h"
 #include "vtksys/Encoding.h"
 
 #include <vtksys/Encoding.hxx>

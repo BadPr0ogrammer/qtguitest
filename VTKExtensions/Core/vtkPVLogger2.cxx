@@ -1,6 +1,6 @@
 #include "vtkPVLogger2.h"
 
-#include "vtkObjectFactory2.h"
+#include "vtkObjectFactory.h"
 
 #include <map>
 #include <vtksys/SystemTools.hxx>

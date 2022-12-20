@@ -33,7 +33,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqPythonLineNumberArea_h
 #define pqPythonLineNumberArea_h
 
-#include "pqPythonModule2.h"
+#include "pqPythonModule.h"
 
 #include <QWidget>
 

@@ -32,7 +32,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqPythonShell_h
 #define pqPythonShell_h
 
-#include "pqPythonModule2.h" //  needed for PQPYTHON_EXPORT.
+#include "pqPythonModule.h" //  needed for PQPYTHON_EXPORT.
+
 #include <QScopedPointer>   // needed for QScopedPointer.
 #include <QWidget>
 

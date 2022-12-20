@@ -8,9 +8,21 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreUtilities2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqMainWindowEventManager2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqMainWindowEventManager2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputPort2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputPort2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputWidget.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputWidget.ui 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqOutputWidget.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPipelineSource2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPipelineSource2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqProxy2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqProxy2.h 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqRepresentation2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqRepresentation2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqServerManagerModelItem2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqServerManagerModelItem2.h 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqTimeKeeper2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqTimeKeeper2.h
 )
 
 target_include_directories(qtguitest

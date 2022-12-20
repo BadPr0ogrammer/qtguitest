@@ -6,7 +6,7 @@
 #ifndef pqFlatTreeView_h
 #define pqFlatTreeView_h
 
-#include "pqWidgetsModule2.h"
+#include "pqWidgetsModule.h"
 #include <QAbstractScrollArea>
 #include <QModelIndex>          // Needed for return type
 #include <QStyleOptionViewItem> // Needed for return type

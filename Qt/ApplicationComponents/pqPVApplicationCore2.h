@@ -3,7 +3,8 @@
 
 #include "pqApplicationCore2.h"
 
-#include "pqApplicationComponentsModule2.h" // for exports
+#include "pqApplicationComponentsModule.h" // for exports
+
 #include "vtkParaViewDeprecation2.h"        // for PARAVIEW_DEPRECATED_IN_5_10_0
 #include <QList>
 #include <QPointer>

@@ -25,7 +25,7 @@
 #ifndef vtkQtDebugLeaksModel_h
 #define vtkQtDebugLeaksModel_h
 
-#include "vtkGUISupportQtModule2.h" // For export macro
+#include "vtkGUISupportQtModule.h" // For export macro
 #include <QStandardItemModel>
 
 class vtkObjectBase;

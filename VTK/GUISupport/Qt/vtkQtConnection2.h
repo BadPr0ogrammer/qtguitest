@@ -30,7 +30,7 @@
 #ifndef vtkQtConnection_h
 #define vtkQtConnection_h
 
-#include "vtkCommand2.h" // for event defines
+#include "vtkCommand.h" // for event defines
 #include <QObject>
 
 class vtkObject;

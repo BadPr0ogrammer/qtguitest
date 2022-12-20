@@ -22,9 +22,9 @@
 #define vtkSmartPyObject_h
 
 // this must be included first
-#include "vtkPython2.h" // PyObject can't be forward declared
+#include "vtkPython.h" // PyObject can't be forward declared
 
-#include "vtkWrappingPythonCoreModule2.h"
+#include "vtkWrappingPythonCoreModule.h"
 
 class VTKWRAPPINGPYTHONCORE_EXPORT vtkSmartPyObject
 {

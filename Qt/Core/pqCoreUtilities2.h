@@ -1,7 +1,7 @@
 #ifndef pqCoreUtilities_h
 #define pqCoreUtilities_h
 
-#include "pqCoreModule2.h"
+#include "pqCoreModule.h"
 #include "pqEventDispatcher2.h"
 
 #include <QDir>

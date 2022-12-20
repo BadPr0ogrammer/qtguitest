@@ -13,8 +13,8 @@
 #include <QStringList>
 
 #include "pqApplicationCore2.h"
-#include "vtkObject2.h"
-#include "vtkWeakPointer2.h"
+#include "vtkObject.h"
+#include "vtkWeakPointer.h"
 #include "vtksys/SystemTools.hxx"
 // b #include "pqSettings.h"
 // b #include "vtkNumberToString.h"

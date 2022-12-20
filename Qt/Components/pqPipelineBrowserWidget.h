@@ -1,7 +1,7 @@
 #ifndef pqPipelineBrowserWidget_h
 #define pqPipelineBrowserWidget_h
 
-#include "pqComponentsModule2.h"
+#include "pqComponentsModule.h"
 #include "pqFlatTreeView2.h"
 
 #include <QPointer>

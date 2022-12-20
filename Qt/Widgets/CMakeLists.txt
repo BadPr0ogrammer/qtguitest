@@ -2,13 +2,16 @@ target_sources(qtguitest
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/pqConsoleWidget.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqConsoleWidget.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqExpanderButton.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqExpanderButton.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqFlatTreeView2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqFlatTreeView2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqExpanderButton.ui
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqQtDeprecated2.h 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqSetName2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqSetName2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsInit2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsInit2.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqQtDeprecated2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqFlatTreeView2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqFlatTreeView2.h
 )
 
 target_include_directories(qtguitest

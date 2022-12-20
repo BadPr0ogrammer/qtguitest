@@ -36,8 +36,8 @@
 #ifndef vtkPythonInteractiveInterpreter_h
 #define vtkPythonInteractiveInterpreter_h
 
-#include "vtkObject2.h"
-#include "vtkPythonInterpreterModule2.h" // For export macro
+#include "vtkObject.h"
+#include "vtkPythonInterpreterModule.h" // For export macro
 
 class vtkPythonInterpreter;
 

@@ -1,7 +1,7 @@
 #ifndef pqPythonScriptEditor_h
 #define pqPythonScriptEditor_h
 
-#include "pqPythonModule2.h"
+#include "pqPythonModule.h"
 
 #include "pqCoreUtilities2.h"
 #include "pqPythonEditorActions2.h"

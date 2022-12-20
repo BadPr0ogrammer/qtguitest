@@ -1,4 +1,4 @@
-#include "vtkPython2.h"
+#include "vtkPython.h"
 
 #include "pqConsoleWidget.h"
 
@@ -7,7 +7,7 @@
 #include <QAbstractItemView>
 #include <QStringListModel>
 
-#include "vtkPythonCompatibility2.h"
+#include "vtkPythonCompatibility.h"
 #include "vtkPythonInteractiveInterpreter2.h"
 
 pqPythonShellCompleter::pqPythonShellCompleter(
