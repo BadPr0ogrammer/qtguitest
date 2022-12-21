@@ -71,18 +71,6 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkWin32OutputWindow.h
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkWindows.h
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkWrappingHints.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVariant.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVariant.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkDataArray.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkDataArray.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkMath.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkMath.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkStringArray.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkStringArray.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVariantArray.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVariantArray.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkIdList.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkIdList.h
 )
 
 target_include_directories(qtguitest

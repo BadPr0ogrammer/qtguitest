@@ -2,34 +2,18 @@ target_sources(qtguitest
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVSessionBase2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVSessionBase2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMMessageMinimal2.h 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMObject2.h 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMObject2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProperty2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProperty2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMPropertyHelper2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMPropertyHelper2.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxyInternals2.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMPropertyIterator2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMPropertyIterator2.h 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxy2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxy2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxyInternals2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxyIterator2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxyIterator2.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxyManager2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxyManager2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMRemoteObject2.h 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMRemoteObject2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSession2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSession2.h 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionObject2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionObject2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionProxyManagerInternals2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionProxyManager2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionProxyManager2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSourceProxy2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSourceProxy2.h
 )
 
 target_include_directories(qtguitest

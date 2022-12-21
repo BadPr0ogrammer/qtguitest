@@ -46,6 +46,7 @@ find_package(PythonLibs REQUIRED)
 
 set(CMAKE_AUTOMOC 1)
 set(CMAKE_AUTOUIC 1)
+set(CMAKE_AUTORCC 1)
 
 add_executable(qtguitest main.cpp)
 
@@ -71,6 +72,8 @@ add_subdirectory(Qt)
 add_subdirectory(VTK)
 add_subdirectory(VTKExtensions)
 add_subdirectory(Remoting)
+
+# target_sources(qtguitest PUBLIC ${RCC_SOURCES})
 
 target_link_libraries(qtguitest
     PRIVATE

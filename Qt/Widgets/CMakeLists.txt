@@ -18,3 +18,5 @@ target_include_directories(qtguitest
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
+
+target_sources(qtguitest PUBLIC Resources/QtWidgets.qrc)

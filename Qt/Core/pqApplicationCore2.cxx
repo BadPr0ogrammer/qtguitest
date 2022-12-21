@@ -28,7 +28,7 @@
 #include "vtkPVLogger2.h"
 #include "vtkSMProxy2.h"
 #include "vtkSMProperty2.h"
-#include "vtkSMPropertyIterator2.h"
+// b #include "vtkSMPropertyIterator2.h"
 #include "vtkPVXMLElement2.h"
 /*
 #include "vtkSMPropertyHelper2.h"

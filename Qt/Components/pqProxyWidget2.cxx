@@ -9,7 +9,7 @@
 #include "pqPropertyWidget2.h"
 #include "pqPropertyWidgetDecorator2.h"
 #include "vtkSMProperty2.h"
-#include "vtkSMPropertyIterator2.h"
+// b #include "vtkSMPropertyIterator2.h"
 #include "pqTimer2.h"
 #include "vtkPVLogger2.h"
 #include "vtkPVXMLElement2.h"
@@ -1323,6 +1323,7 @@ void pqProxyWidget::updatePanel()
 bool pqProxyWidget::restoreDefaults()
 {
   bool anyReset = false;
+  /* b
   // b vtkSMSettings* settings = vtkSMSettings::GetInstance();
   if (this->Internals->Proxy)
   {
@@ -1356,7 +1357,6 @@ bool pqProxyWidget::restoreDefaults()
         // number just below VTK_DOUBLE_MAX.
         settings->GetPropertySetting(smproperty, nextafter(VTK_DOUBLE_MAX, 0));
       }
-      */
     }
   }
 
@@ -1369,6 +1369,7 @@ bool pqProxyWidget::restoreDefaults()
     Q_EMIT changeAvailable();
     Q_EMIT changeFinished();
   }
+  */
   return anyReset;
 }
 

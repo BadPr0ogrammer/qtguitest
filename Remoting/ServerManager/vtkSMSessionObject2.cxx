@@ -2,7 +2,7 @@
 
 #include "vtkObjectFactory.h"
 
-#include "vtkSMProxyManager2.h"
+// b #include "vtkSMProxyManager2.h"
 // b #include "vtkSMSession2.h"
 // b #include "vtkSMSessionProxyManager.h"
 

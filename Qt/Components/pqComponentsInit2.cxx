@@ -10,5 +10,5 @@ void pqComponentsInit()
   pqWidgetsInit();
 
   // init resources
-  // b Q_INIT_RESOURCE(pqComponents);
+  Q_INIT_RESOURCE(pqComponents);
 }

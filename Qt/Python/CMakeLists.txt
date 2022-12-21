@@ -24,7 +24,6 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonTextArea.txx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand2.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUtils2.h
  )
 
 target_include_directories(qtguitest

@@ -6,7 +6,7 @@
 // ParaView Server Manager.
 #include "vtkEventQtSlotConnect2.h"
 #include "vtkPVXMLElement2.h"
-#include "vtkSMPropertyIterator2.h"
+// b #include "vtkSMPropertyIterator2.h"
 #include "vtkSMProxy2.h"
 /* b
 #include "vtkSMPropertyHelper2.h"

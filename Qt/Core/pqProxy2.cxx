@@ -3,9 +3,9 @@
 #include "vtkEventQtSlotConnect2.h"
 #include "vtkPVXMLElement2.h"
 #include "vtkSMProperty2.h"
-#include "vtkSMPropertyIterator2.h"
+// b #include "vtkSMPropertyIterator2.h"
 #include "vtkSMProxy2.h"
-#include "vtkSMProxyIterator2.h"
+// b #include "vtkSMProxyIterator2.h"
 #include "vtkSmartPointer.h"
 
 #include "vtksys/RegularExpression.hxx"
