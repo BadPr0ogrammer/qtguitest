@@ -2,7 +2,6 @@
 
 #include "pqApplicationCore2.h"
 #include "pqPropertyWidget2.h"
-#include "pqPropertyWidgetDecorator2.h"
 #include "vtkPVLogger2.h"
 #include "vtkPVXMLElement2.h"
 /* b

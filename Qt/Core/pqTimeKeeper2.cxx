@@ -3,7 +3,7 @@
 #include "vtkCommand.h"
 #include "vtkNew.h"
 
-#include "vtkEventQtSlotConnect2.h"
+#include "vtkEventQtSlotConnect.h"
 #include "vtkSMProperty2.h"
 // b #include "vtkSMPropertyHelper2.h"
 #include "vtkSMProxy2.h"

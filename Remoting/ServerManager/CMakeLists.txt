@@ -1,22 +1,17 @@
-target_sources(qtguitest
+target_sources(RemotingServerManager2
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVSessionBase2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVSessionBase2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMObject2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMObject2.cxx 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProperty2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProperty2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxy2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxy2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMRemoteObject2.h 
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVSessionBase2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMObject2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMObject2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProperty2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProperty2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxy2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMProxy2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMRemoteObject2.cxx
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSession2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMRemoteObject2.h 
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSession2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSession2.h 
-    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionObject2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionObject2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMSessionObject2.h 
-)
-
-target_include_directories(qtguitest
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
 )

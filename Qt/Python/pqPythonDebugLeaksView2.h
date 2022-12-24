@@ -32,7 +32,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef pqPythonDebugLeaksView_h
 #define pqPythonDebugLeaksView_h
 
-#include "vtkQtDebugLeaksView2.h"
+#include "vtkQtDebugLeaksView.h"
 
 #include "pqPythonModule.h" // for exports
 #include <QPointer>         // for QPointer

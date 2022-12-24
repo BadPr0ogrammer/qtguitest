@@ -1,4 +1,4 @@
-target_sources(qtguitest
+target_sources(VTKExtensionsCore2
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVLogger2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVLogger2.h
@@ -6,9 +6,4 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVXMLElement2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkStringList2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/vtkStringList2.h
-)
-
-target_include_directories(qtguitest
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
 )

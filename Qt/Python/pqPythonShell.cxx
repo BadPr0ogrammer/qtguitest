@@ -17,8 +17,8 @@
 #include "pqPythonShellCompleter2.h"
 // b #include "pqUndoStack.h"
 // b #include "vtkPVOptions.h"
-#include "vtkPythonInteractiveInterpreter2.h"
-#include "vtkPythonInterpreter2.h"
+#include "vtkPythonInteractiveInterpreter.h"
+#include "vtkPythonInterpreter.h"
 
 #include <QAbstractItemView>
 #include <QApplication>

@@ -17,7 +17,7 @@
 #define pqQtConfig_h
 
 #ifndef PARAVIEW_USE_QTHELP // XXX: This guard is only needed while `vtkPVConfig.h` exists
-/* #undef PARAVIEW_USE_QTHELP */
+// b #define PARAVIEW_USE_QTHELP
 #endif
 
 #endif

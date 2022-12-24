@@ -4,9 +4,9 @@
 
 #include "pqPythonDebugLeaksView2.h"
 #include "pqPythonShell.h"
-// b #include "vtkPythonUtil.h"
-#include "vtkQtDebugLeaksModel2.h"
-#include "vtkSmartPyObject2.h"
+#include "vtkPythonUtil.h"
+#include "vtkQtDebugLeaksModel.h"
+#include "vtkSmartPyObject.h"
 
 //-----------------------------------------------------------------------------
 namespace
@@ -56,8 +56,8 @@ void pqPythonDebugLeaksView::addObjectToPython(vtkObjectBase* object)
 {
   if (auto context = consoleContext(this->shell()))
   {
-    // b vtkSmartPyObject pyObj(vtkPythonUtil::GetObjectFromPointer(object));
-    // b PyDict_SetItemString(context, "obj", pyObj);
+    vtkSmartPyObject pyObj(vtkPythonUtil::GetObjectFromPointer(object));
+    PyDict_SetItemString(context, "obj", pyObj);
   }
 }
 
@@ -69,8 +69,8 @@ void pqPythonDebugLeaksView::addObjectsToPython(const QList<vtkObjectBase*>& obj
     vtkSmartPyObject pyListObj(PyList_New(objects.size()));
     for (int i = 0; i < objects.size(); ++i)
     {
-      // b PyObject* pyObj = vtkPythonUtil::GetObjectFromPointer(objects[i]);
-      // b PyList_SET_ITEM(pyListObj.GetPointer(), i, pyObj);
+      PyObject* pyObj = vtkPythonUtil::GetObjectFromPointer(objects[i]);
+      PyList_SET_ITEM(pyListObj.GetPointer(), i, pyObj);
     }
     PyDict_SetItemString(context, "objs", pyListObj);
   }

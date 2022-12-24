@@ -1,4 +1,4 @@
-target_sources(qtguitest
+target_sources(pqComponents2
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/pqComponentsInit2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqComponentsInit2.h
@@ -7,8 +7,8 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertiesPanel.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertiesPanel.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertiesPanel.ui 
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertyWidget2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertyWidget2.cxx 
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertyWidget2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertyWidgetDecorator2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPropertyWidgetDecorator2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqProxyWidget2.cxx
@@ -16,12 +16,6 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqSearchBox.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqSearchBox.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqSearchBox.ui
+    ${CMAKE_CURRENT_SOURCE_DIR}/Resources/pqComponents.qrc
 )
-
-target_include_directories(qtguitest
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-)
-
-target_sources(qtguitest PUBLIC Resources/pqComponents.qrc)
 

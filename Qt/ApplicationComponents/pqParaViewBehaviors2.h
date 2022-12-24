@@ -3,7 +3,7 @@
 
 #include "pqApplicationComponentsModule.h"
 
-#include "vtkSetGet.h" // for VTK_LEGACY.
+// b #include "vtkSetGet.h" // for VTK_LEGACY.
 
 #include <QFlags>
 #include <QObject>

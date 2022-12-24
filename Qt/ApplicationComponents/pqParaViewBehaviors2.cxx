@@ -1,6 +1,7 @@
 #include "pqParaViewBehaviors2.h"
 
 #include "pqApplicationCore2.h"
+#include "pqPropertiesPanel.h"
 /* b
 * #include "pqAlwaysConnectedBehavior2.h"
 * #include "pqServerManagerModel.h"
@@ -26,7 +27,6 @@
 #include "pqPluginDockWidgetsBehavior.h"
 #include "pqPluginSettingsBehavior.h"
 #include "pqPluginToolBarBehavior.h"
-#include "pqPropertiesPanel.h"
 #include "pqSpreadSheetVisibilityBehavior.h"
 #include "pqStandardPropertyWidgetInterface.h"
 #include "pqStandardRecentlyUsedResourceLoaderImplementation.h"

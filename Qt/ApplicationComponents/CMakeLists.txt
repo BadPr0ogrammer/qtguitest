@@ -1,4 +1,4 @@
-target_sources(qtguitest
+target_sources(pqApplicationComponents2
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationComponentsInit2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationComponentsInit2.h
@@ -6,9 +6,4 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqParaViewBehaviors2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPVApplicationCore2.cxx    
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPVApplicationCore2.h
-)
-
-target_include_directories(qtguitest
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
 )

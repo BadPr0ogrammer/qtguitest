@@ -1,4 +1,4 @@
-target_sources(qtguitest
+target_sources(pqCore2
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationCore2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationCore2.h
@@ -23,11 +23,6 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqServerManagerModelItem2.h 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqTimeKeeper2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqTimeKeeper2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Resources/pqCore.qrc
 )
 
-target_include_directories(qtguitest
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-)
-
-target_sources(qtguitest PUBLIC Resources/pqCore.qrc)

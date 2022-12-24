@@ -1,0 +1,76 @@
+add_subdirectory(vtkkwiml)
+add_subdirectory(vtksys)
+add_subdirectory(vtkqttesting)
+add_subdirectory(vtkprotobuf)
+
+target_sources(qtguitest
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqApplicationComponentsModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqComponentsModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqCoreModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqQtConfig.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/pvpythonmodules
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkArrayDispatchArrayList.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkBuild.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkcli11
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkCommonCoreModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkCommonDataModelModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkCommonMiscModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkDebug.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkDebugRangeIterators.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkEndian.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkFeatures.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkFloatingPointExceptionsConfigure.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkGUISupportQtModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkIOXMLParserModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkkwiml
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkLegacy.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkMathConfigure.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkOptions.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPlatform.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkprotobuf
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVMessage.pb.cc
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVMessage.pb.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVVersion.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPVVTKExtensionsCoreModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPython.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPythonCompatibility.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPythonConfigure.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkPythonInterpreterModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkpythonmodules
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkqttesting
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingApplicationModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingCoreModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingServerManagerModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkRemotingSettingsModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkSMP.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtksys
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkThreads.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeFloat32Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeFloat64Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeInt16Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeInt32Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeInt64Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeInt8Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeListMacros.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeUInt16Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeUInt32Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeUInt64Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkTypeUInt8Array.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVersionFull.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVersionMacros.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkVTK_USE_SCALED_SOA_ARRAYS.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtkWrappingPythonCoreModule.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_cli11.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_cli11_external.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_cli11_forward.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_kwiml.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/vtk_protobuf.h
+)
+
+target_include_directories(qtguitest
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)

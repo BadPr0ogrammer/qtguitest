@@ -1,6 +1,8 @@
 #include "pqPipelineBrowserWidget.h"
 
 #include "pqApplicationCore2.h"
+#include "pqOutputPort2.h"
+#include "pqPipelineSource2.h"
 /* b
 * #include "pqPipelineModel2.h"
 #include "pqPipelineModelSelectionAdaptor2.h"
@@ -8,9 +10,7 @@
 #include "pqExtractor.h"
 #include "pqLiveInsituManager.h"
 #include "pqLiveInsituVisualizationManager.h"
-#include "pqOutputPort.h"
 #include "pqPipelineAnnotationFilterModel.h"
-#include "pqPipelineSource.h"
 #include "pqRenderView.h"
 #include "pqServer.h"
 #include "pqServerManagerModel.h"

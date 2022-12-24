@@ -4,7 +4,7 @@
 
 #include "vtkSmartPointer.h"
 // ParaView Server Manager.
-#include "vtkEventQtSlotConnect2.h"
+#include "vtkEventQtSlotConnect.h"
 #include "vtkPVXMLElement2.h"
 // b #include "vtkSMPropertyIterator2.h"
 #include "vtkSMProxy2.h"

@@ -1,6 +1,6 @@
 #include "pqProxy2.h"
 
-#include "vtkEventQtSlotConnect2.h"
+#include "vtkEventQtSlotConnect.h"
 #include "vtkPVXMLElement2.h"
 #include "vtkSMProperty2.h"
 // b #include "vtkSMPropertyIterator2.h"

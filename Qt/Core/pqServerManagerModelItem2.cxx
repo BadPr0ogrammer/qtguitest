@@ -4,7 +4,7 @@
 #include "pqServerManagerModelItem2.h"
 
 // ParaView includes.
-#include "vtkEventQtSlotConnect2.h"
+#include "vtkEventQtSlotConnect.h"
 
 // Qt includes.
 

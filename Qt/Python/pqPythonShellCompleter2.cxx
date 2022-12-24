@@ -8,7 +8,7 @@
 #include <QStringListModel>
 
 #include "vtkPythonCompatibility.h"
-#include "vtkPythonInteractiveInterpreter2.h"
+#include "vtkPythonInteractiveInterpreter.h"
 
 pqPythonShellCompleter::pqPythonShellCompleter(
   QWidget* parent, vtkPythonInteractiveInterpreter* interp)

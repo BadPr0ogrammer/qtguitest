@@ -16,8 +16,8 @@
 #include "pqPythonScriptEditor2.h"
 // b #include "pqServer.h"
 // b #include "pqServerManagerModel.h"
-#include "vtkPythonInteractiveInterpreter2.h"
-#include "vtkPythonInterpreter2.h"
+#include "vtkPythonInteractiveInterpreter.h"
+#include "vtkPythonInterpreter.h"
 #include "vtkSmartPointer.h"
 
 #include <QCoreApplication>

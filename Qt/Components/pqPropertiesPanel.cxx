@@ -5,11 +5,11 @@
 #include "vtkCommand.h"
 #include "vtkLegacy.h"
 #include "vtkNew.h"
+#include "vtkEventQtSlotConnect.h"
 
 #include "pqApplicationCore2.h"
 #include "pqCoreUtilities2.h"
 #include "pqTimer2.h"
-#include "vtkEventQtSlotConnect2.h"
 #include "vtkPVLogger2.h"
 #include "pqProxyWidget2.h"
 #include "pqSearchBox.h"

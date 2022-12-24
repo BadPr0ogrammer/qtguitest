@@ -1,4 +1,4 @@
-target_sources(qtguitest
+target_sources(pqWidgets2
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/pqConsoleWidget.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqConsoleWidget.h
@@ -12,11 +12,5 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqSetName2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsInit2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqWidgetsInit2.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/Resources/QtWidgets.qrc
 )
-
-target_include_directories(qtguitest
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-)
-
-target_sources(qtguitest PUBLIC Resources/QtWidgets.qrc)

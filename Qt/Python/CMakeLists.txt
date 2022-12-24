@@ -1,6 +1,6 @@
-target_sources(qtguitest
+target_sources(pqPython2
     PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonDebugLeaksView2.cxx
+    ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonDebugLeaksView2.cxx 
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonDebugLeaksView2.h
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonEditorActions2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonEditorActions2.h
@@ -25,8 +25,3 @@ target_sources(qtguitest
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand2.cxx
     ${CMAKE_CURRENT_SOURCE_DIR}/pqPythonUndoCommand2.h
  )
-
-target_include_directories(qtguitest
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}
-)

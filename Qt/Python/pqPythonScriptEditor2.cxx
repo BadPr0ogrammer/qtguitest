@@ -19,7 +19,7 @@
 #include <QTextEdit>
 #include <QToolButton>
 
-#include <vtkPythonInterpreter2.h>
+#include <vtkPythonInterpreter.h>
 
 namespace details
 {
